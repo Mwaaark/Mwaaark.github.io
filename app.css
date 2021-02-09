@@ -1,0 +1,26 @@
+body {
+  padding-top: 5rem;
+  background-color: #22223b;
+  font-family: "Nunito", sans-serif;
+}
+
+.text-puti {
+  color: #f2e9e4;
+}
+
+.bg-itim {
+  background-color: #4a4e69;
+}
+
+#profile h1,
+#projects h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#profile a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #4a4e69;
+}

@@ -4,18 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
+    <meta name="author" content="Mark Robert Bumatay" />
     <meta name="generator" content="Hugo 0.79.0" />
-    <title>Starter Template · Bootstrap v5.0</title>
-
+    <title>Mwaaark | Portfolio</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.0/examples/starter-template/"
     />
-
     <!-- Bootstrap core CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -23,7 +18,17 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -39,14 +44,13 @@
         }
       }
     </style>
-
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet" />
+    <link href="app.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <body class="d-flex flex-column vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-itim fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Mwaaark</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -110,15 +114,48 @@
     </nav>
 
     <main class="container">
-      <div class="starter-template text-center py-5 px-3">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">
-          Use this document as a way to quickly start any new project.<br />
-          All you get is this text and a mostly barebones HTML document.
-        </p>
-      </div>
+      <section id="profile" class="mb-5">
+        <div class="text-puti">
+          <h1 class="display-1">Hello, I'm Mark Robert Bumatay.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+            distinctio ad, accusantium illum facere optio eveniet aut aliquid a,
+            corporis asperiores labore maxime. Suscipit et voluptate laudantium
+            adipisci amet odit. Illo est tempora reiciendis vel, quidem aut
+            ullam nam labore debitis earum iure praesentium impedit accusantium
+            enim, architecto laborum illum tempore reprehenderit veniam sequi
+            dicta esse! Quidem ratione at nisi.
+          </p>
+          <div class="d-flex align-items-center">
+            <img
+              src="/images/me.jpg"
+              alt="me"
+              class="rounded-circle me-3"
+              style="width: 50px; height: 50px"
+            />
+            <a href="https://twitter.com/mwaaark" class="text-puti me-3"
+              ><i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://github.com/Mwaaark" class="text-puti"
+              ><i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="text-puti">
+          <h2 class="display-4">Projects</h2>
+        </div>
+      </section>
     </main>
     <!-- /.container -->
+
+    <footer class="footer py-3 mt-auto">
+      <div class="container text-puti">
+        <span>&copy; Mark Robert Bumatay 2021</span>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
