@@ -1,26 +1,66 @@
 body {
   padding-top: 5rem;
-  background-color: #22223b;
   font-family: "Nunito", sans-serif;
 }
 
-.text-puti {
-  color: #f2e9e4;
+.bg-color-1 {
+  background-color: #f2e9e4;
 }
 
-.bg-itim {
+.bg-color-2 {
+  background-color: #c9ada7;
+}
+
+.bg-color-3 {
+  background-color: #9a8c98;
+}
+
+.bg-color-4 {
   background-color: #4a4e69;
 }
 
-#profile h1,
-#projects h2 {
+.bg-color-5 {
+  background-color: #22223b;
+}
+
+.text-color-1 {
+  color: #f2e9e4;
+}
+
+.text-color-2 {
+  color: #c9ada7;
+}
+
+.text-color-3 {
+  color: #9a8c98;
+}
+
+.text-color-4 {
+  color: #4a4e69;
+}
+
+.text-color-5 {
+  color: #22223b;
+}
+
+#profile h1 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 #profile a {
   text-decoration: none;
 }
 
-.footer {
-  background-color: #4a4e69;
+#profile a:hover {
+  color: #c9ada7;
+}
+
+section div h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.card-body ul {
+  list-style: none;
 }

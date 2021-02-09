@@ -47,8 +47,8 @@
     <!-- Custom styles for this template -->
     <link href="app.css" rel="stylesheet" />
   </head>
-  <body class="d-flex flex-column vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-itim fixed-top">
+  <body class="d-flex flex-column vh-100 bg-color-5">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Mwaaark</a>
         <button
@@ -114,10 +114,14 @@
     </nav>
 
     <main class="container">
-      <section id="profile" class="mb-5">
-        <div class="text-puti">
-          <h1 class="display-1">Hello, I'm Mark Robert Bumatay.</h1>
-          <p>
+      <section id="profile">
+        <div
+          class="vh-100 d-flex flex-column justify-content-center text-color-1"
+        >
+          <h1 class="display-3 text-color-2">
+            Hello, I'm Mark Robert Bumatay.
+          </h1>
+          <p class="text-muted">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
             distinctio ad, accusantium illum facere optio eveniet aut aliquid a,
             corporis asperiores labore maxime. Suscipit et voluptate laudantium
@@ -126,33 +130,102 @@
             enim, architecto laborum illum tempore reprehenderit veniam sequi
             dicta esse! Quidem ratione at nisi.
           </p>
-          <div class="d-flex align-items-center">
+          <div class="d-flex justfiy align-items-center">
             <img
-              src="/images/me.jpg"
+              src="/images/mypic.png"
               alt="me"
               class="rounded-circle me-3"
-              style="width: 50px; height: 50px"
+              style="width: 40px; height: 40px"
             />
-            <a href="https://twitter.com/mwaaark" class="text-puti me-3"
+            <a href="https://twitter.com/mwaaark" class="text-color-1 me-3"
               ><i class="fab fa-twitter"></i> Twitter
             </a>
-            <a href="https://github.com/Mwaaark" class="text-puti"
+            <a href="https://github.com/Mwaaark" class="text-color-1"
               ><i class="fab fa-github"></i> Github
             </a>
           </div>
         </div>
       </section>
 
+      <section id="tech-skills" class="mb-5">
+        <div class="vh-100 text-color-1">
+          <h3 class="text-uppercase mb-3">Technical Skills</h3>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card bg-color-2">
+                <div class="card-body">
+                  <h4 class="card-title text-color-5">Front-End</h4>
+                  <ul class="text-color-4 fs-5">
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3"></i> CSS</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card bg-color-2">
+                <div class="card-body">
+                  <h4 class="card-title text-color-5">Back-End</h4>
+                  <ul class="text-color-4 fs-5">
+                    <li><i class="fab fa-node-js"></i> NodeJS</li>
+                    <li><i class="fas fa-database"></i> MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-color-2">
+                <div class="card-body">
+                  <h4 class="card-title text-color-5">Others</h4>
+                  <ul class="text-color-4 fs-5">
+                    <li><i class="fab fa-github"></i> GitHub</li>
+                    <li>
+                      <img
+                        alt="svgImg"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTg1LjY3OTgxLDguMDYyNWMtMTEuMzM5NTksMC4wMzY2NiAtMjIuODQ3MzYsMi41NjA4MSAtMzMuNzMwMjIsNy44NDcyOWMtMTguNTgxMzgsOS4wMjczMSAtMzIuODEzNDUsMjUuMDY4NDUgLTM5LjU2NzE0LDQ0LjU5MDQ1Yy0xNC4wOTMyNSw0MC42NTExMiA3LjQzNzc0LDg1LjAyNjc1IDQ4LjA5MTU1LDk5LjExNzMxYzQwLjY1MzgxLDE0LjA5MDU2IDg1LjAyOTMxLC03LjQ0MDQzIDk5LjEyMjU2LC00OC4wOTE1NWM2LjgzNywtMTkuNTM4MTMgNS41NTk2LC00MS4wMDUyOSAtMy41NDgzNCwtNTkuNTk3NDFjLTEzLjUxMTgzLC0yNy44MDk4MyAtNDEuMzg5NDQsLTQzLjk1OTc4IC03MC4zNjg0MSwtNDMuODY2MDl6TTg0Ljc0NTQ4LDEzLjQwMDc2YzguMjc4NjYsLTAuMTQzMzIgMTYuNzIzMDEsMS4xNDA3NiAyNS4wMDExLDQuMDEwMjVjMTguMTcwMTksNi4yOTk1IDMzLjA5Nzc4LDE5LjU1NjUyIDQxLjQ5MzUzLDM2Ljg1ODY0YzguMzk4NDQsMTcuMzAyMTMgOS41NzIyLDM3LjIzNTgyIDMuMjc1MzksNTUuNDA4NjljLTEzLjExNzY5LDM3Ljg0IC01NC40MjQ2NSw1Ny44ODM5MiAtOTIuMjY3MzQsNDQuNzY4OTJjLTM3Ljg0MjY5LC0xMy4xMTUgLTU3Ljg4MzkyLC01NC40MjQ2NSAtNDQuNzY4OTIsLTkyLjI2NzMzYzEwLjI0NjA5LC0yOS41NjQ2IDM3LjY5OTU4LC00OC4yNjczMSA2Ny4yNjYyNCwtNDguNzc5MTh6TTg1LjAyODkzLDIyLjM1NTU5Yy0yLjI0NDA2LC0wLjAzMjI1IC00LjQ4OCwwLjA1ODA4IC02LjcyNCwwLjI2NzdjLTEuNDgzNSwwLjA0ODM4IC0yLjY0NDA4LDEuMjkwNjcgLTIuNTkzMDIsMi43NzE0OGMwLjA0ODM4LDEuNDgzNSAxLjI5MDY3LDIuNjQ0MDggMi43NzE0OCwyLjU5MzAyYzAuMTEwMTksLTAuMDAyNjggMC4yMjU3NSwtMC4wMTI2OCAwLjMzNTk0LC0wLjAzMTQ5YzIuMDIxLC0wLjIwOTYyIDQuMDQ5MzEsLTAuMzEyNTEgNi4wNzgzNywtMC4zMDQ0NWMxLjQ3MDA2LC0wLjIwNDI1IDIuNDkyODIsLTEuNTYxMzEgMi4yODg1NywtMy4wMjg2OWMtMC4xNTg1NiwtMS4xMzk1IC0xLjAyNTkxLC0yLjA1MjU4IC0yLjE1NzM1LC0yLjI2NzU4ek02Ny4zMjkyMiwyNC44MzgzOGMtMC4zNDY5LC0wLjAzODA5IC0wLjcxMDEzLC0wLjAwNjQyIC0xLjA2NTU1LDAuMDk5NzNjLTE4LjkxMTk0LDUuNzUzOTQgLTMzLjk0NDcyLDIwLjE3ODIxIC00MC40Njk5NywzOC44Mzc1M2MtMC41MjY3NSwxLjM4Njc1IDAuMTcyMjEsMi45Mzc2IDEuNTU4OTYsMy40NjQzNWMxLjM4Njc1LDAuNTI2NzUgMi45Mzc2MSwtMC4xNjY5NiAzLjQ2NDM2LC0xLjU1MzcxYzAuMDE4ODEsLTAuMDQ1NjkgMC4wMzM4LC0wLjA5MzM1IDAuMDQ3MjQsLTAuMTQxNzJsLTAuMDk0NDgsMC4wOTQ0OGM1Ljk1MjgxLC0xNy4wODcxMiAxOS43MjE1NSwtMzAuMzA1NTEgMzcuMDM3MTEsLTM1LjU1Njg5YzEuNDIxNjksLTAuNDI0NjIgMi4yMjUwNCwtMS45MjE5NCAxLjgwMDQyLC0zLjM0MzYzYy0wLjMxODQ3LC0xLjA2NjI3IC0xLjIzNzM4LC0xLjc4NTg5IC0yLjI3ODA4LC0xLjkwMDE1ek0xMjAuNzY5NTMsMzkuNjQwNjNjLTYuNDAxNjIsMCAtMTEuNTg0Niw1LjE4ODIyIC0xMS41ODQ2LDExLjU4OTg0YzAsNi40MDE2MyA1LjE4NTY2LDExLjU5NTA5IDExLjU4NDYsMTEuNTk1MDljMS42NTAxMiwwIDMuMjEzMiwtMC4zNTgwNyA0LjYzNDg5LC0wLjk4MTU3bC04LjUwMzQyLC04Ljc4Njg2Yy0wLjE3NzM4LC0wLjE4Mjc1IC0wLjI3MzIsLTAuNDMyMzEgLTAuMjYyNDUsLTAuNjg3NjJjMC4wMDgwNiwtMC4yNTUzMSAwLjEyNDEzLC0wLjQ5NzMxIDAuMzE0OTQsLTAuNjY2NjNsMTAuNzk3MjQsLTkuNjY4N2MtMS45NDU3NSwtMS40ODA4MSAtNC4zNDc0NSwtMi4zOTM1NSAtNi45ODEyLC0yLjM5MzU1ek0xMjkuMTY3OTcsNDMuMjgzNDVsLTEwLjIzNTYsOS4xNzAwNGw4LjE4MzIzLDguNDU2MThjMy4xNTI0NCwtMi4wNzIwNiA1LjIzODUzLC01LjYyMzc2IDUuMjM4NTMsLTkuNjc5MmMwLC0zLjA4NTI1IC0xLjIyMTYsLTUuODY5NTggLTMuMTg2MTYsLTcuOTQ3MDJ6TTEyOC45NTI3Niw0OC43ODQ0MmMwLjM2MjMxLC0wLjAyMTggMC43MTg5OSwwLjE2NzcyIDAuODkyMzMsMC41MTQ0YzAuMDQ4MzcsMC4wOTk0NCAxLjE5NjA2LDIuNDY4NDcgLTAuMzQxMTksNS41NDI5N2MtMC4xNjM5NCwwLjMzMDU2IC0wLjQ5NTg0LDAuNTE5NjUgLTAuODM5ODQsMC41MTk2NWMtMC4xMzk3NSwwIC0wLjI4NTU1LC0wLjAzMjU0IC0wLjQxOTkyLC0wLjA5OTczYy0wLjQ2NDk0LC0wLjIzMTEyIC0wLjY1MzczLC0wLjc5MjE0IC0wLjQxOTkyLC0xLjI1OTc3YzEuMDk5MTksLTIuMTk1NjkgMC4zNjU1LC0zLjgwNjU5IDAuMzM1OTQsLTMuODczNzhjLTAuMjIwMzgsLTAuNDY0OTQgLTAuMDI2NTgsLTEuMDIzNTIgMC40MzU2NywtMS4yNDkyN2MwLjExNTU2LC0wLjA1NTc3IDAuMjM2MTYsLTAuMDg3MjIgMC4zNTY5MywtMC4wOTQ0OHpNMTA1LjkwOTU1LDU4LjIwNjQyYy0xLjcyODA2LDAuMDc0NTggLTMuNjg5MTQsMC40OTM5NSAtNS44MDAxNywxLjI1NDUyYy04LjM5ODQ0LDMuMDIzNDQgLTE4LjQ3NjU2LDE0LjEwOTM4IC0xOC40NzY1NiwxNC4xMDkzOGwtOC4wODM0OSw5LjM3NDc2bDYuNjM0NzcsNi41MTkyOWwzMC4xMjQxNCwtMzAuNDM5MDhjLTEuMTc1NzgsLTAuNjIwODEgLTIuNjcwNjIsLTAuODkzNDMgLTQuMzk4NjgsLTAuODE4ODV6TTExMS44MDQyLDYwLjE5MDU1bC0zMC4yODE2MiwzMC41OTY1NmwzLjkxMDUyLDMuODQ3NTRsMjIuNzM4NzcsLTIzLjA2NDIxYzAuMDY3MTksLTAuMDY0NSA0Ljk3MTI1LC00LjkwNDIzIDQuNzI5MzcsLTkuMjAxNTRjLTAuMjIzMDYsLTAuODUxOTQgLTAuNTg2NDIsLTEuNTg5NzggLTEuMDk3MDUsLTIuMTc4MzV6TTExMi4yNjA4Niw2OS41NDQzMWMtMS4zMDYxMywxLjkxNjE5IC0yLjY1MDY3LDMuMjQ5MTkgLTIuNzY2MjMsMy4zNTkzOGwtMjIuNzIzMDIsMjMuMDQzMjFsMy4wMTgxOSwyLjk3MDk1YzAuMzA2MzcsLTAuMjc5NSAwLjYwMTcxLC0wLjUzOTIyIDAuOTA4MDgsLTAuODI0MWMxNi4zNzQ5NCwtMTUuMTg0MzggMTkuODIxNDksLTIxLjY2MTM4IDIxLjU2Mjk5LC0yOC41NDk0NHpNNzIuMzE1OCw4NC4zNzI4bC03LjQ3OTg2LDguNjgxODlsMTMuNzE1NywtMi41NTEwM3pNNzkuODc0MzksOTEuODAwMTdsLTQuNzI0MTIsNC44OTIwOWw4LjM4Nzk0LC0xLjI5MTI2ek04NS4yMDc0LDk3LjA0OTE5bC0xMi4yMTQ0OCwxLjg3OTE1bC0yMi4zOTIzMywyMy4xNzQ0NGw5LjM5NTc1LDkuMjM4MjhsMC40NzI0MSwwLjAxMDVsLTIuMzUxNTYsLTkuNzQyMTljMCwwIDEyLjk1NTMsLTUuODg0NTcgMzAuMjgxNjIsLTIxLjQzMTc2ek0xMzkuMDU3MTMsOTkuNzYyOTRjLTEuMDI5ODYsMC4xODgwOCAtMS44OTQ0OCwwLjk3MTIgLTIuMTM2MzUsMi4wNTc2MmMtMC4zMDM2OSwxLjM2MjU2IDAuNDgzMTYsMi43MzI4NSAxLjgxNjE2LDMuMTQ5NDFsNS4xODYwMywxLjM4NTc0YzEuNDQ4NTYsMC4zMjI1IDIuODg0NjYsLTAuNTg4MDYgMy4yMDcxNiwtMi4wMzY2MmMwLjMwMzY5LC0xLjM2MjU2IC0wLjQ4ODQxLC0yLjczMjg1IC0xLjgyMTQxLC0zLjE0OTQxbC01LjE4MDc5LC0xLjM4NTc0Yy0wLjM2MjE0LC0wLjA4MDYyIC0wLjcyNzUxLC0wLjA4MzY5IC0xLjA3MDgsLTAuMDIwOTl6TTEzNC40OTA0OCwxMTIuNDEzMDljLTEuMDQzMDksLTAuMDkxNzEgLTIuMDg4NzMsMC40MzU2MyAtMi42MDg3NiwxLjQxNzI0Yy0wLjY2MTEyLDEuMjQ3IC0wLjI0MzMsMi43OTM0IDAuOTU1MzIsMy41Mzc4NGw0LjY1MDY0LDIuNjc3YzEuMjk1MzgsMC43MzkwNiAyLjk0NTc1LDAuMjg3NTYgMy42ODQ4MiwtMS4wMDc4MWMwLjczOTA2LC0xLjI5NTM4IDAuMjg3NTYsLTIuOTQ1NzUgLTEuMDA3ODEsLTMuNjg0ODJsLTQuNjUwNjQsLTIuNjM1MDFjLTAuMzI3ODgsLTAuMTc0MDIgLTAuNjc1ODYsLTAuMjczODcgLTEuMDIzNTYsLTAuMzA0NDR6TTEyNS44NjEwOCwxMjMuMTczNThjLTAuNjg2OTksMCAtMS4zNjk0OSwwLjI2MzI5IC0xLjg5NDksMC43ODczNWMtMS4wNDgxMiwxLjA0ODEyIC0xLjA0ODEyLDIuNzQ2OTIgMCwzLjc5NTA0bDMuNzk1MDQsMy44MDAyOWMxLjA0ODEzLDEuMDQ4MTIgMi43NDY5MiwxLjA0ODEyIDMuNzk1MDUsMGMxLjA0ODEyLC0xLjA0ODEyIDEuMDQ4MTIsLTIuNzUyMTcgMCwtMy44MDAyOWwtMy43OTUwNSwtMy43OTUwNGMtMC41MjQwNiwtMC41MjQwNiAtMS4yMTMxNSwtMC43ODczNSAtMS45MDAxNSwtMC43ODczNXpNNDkuMjkzNTgsMTIzLjQ1NzAzbC03LjMwMTM5LDcuNTU4NTlsMTUuMjc0NjYsMC4yNzgyek0xMTQuNjc1NDIsMTMxLjUxOTUzYy0wLjM0NTI2LDAuMDQzNzYgLTAuNjgyNzUsMC4xNTU3NSAtMS4wMDI1NiwwLjM0MTE5Yy0xLjI3NjU2LDAuNzQ3MTMgLTEuNzEyODIsMi4zODk4MiAtMC45NzEwNywzLjY2OTA3bDIuNjYxMjUsNC42Mjk2NGMwLjY5NjA2LDEuMzExNSAyLjMxODI2LDEuODA4ODUgMy42MjcwOCwxLjExMjc5YzEuMzExNSwtMC42OTYwNiAxLjgwODg1LC0yLjMxODI2IDEuMTEyNzksLTMuNjI3MDdjLTAuMDI5NTYsLTAuMDUzNzUgLTAuMDU2OTgsLTAuMTExNjYgLTAuMDg5MjMsLTAuMTYyNzJsLTIuNjc3LC00LjY1MDY0Yy0wLjU2MDM0LC0wLjk1OTQ0IC0xLjYyNTQ4LC0xLjQ0MzUyIC0yLjY2MTI1LC0xLjMxMjI2ek0xMDIuNzYwMTMsMTM2Ljc1ODA2Yy0wLjM0NTIyLC0wLjA1MDUyIC0wLjcwMTUyLC0wLjAzNTY1IC0xLjA2MDMsMC4wNTc3NGMtMC4wMDUzOCwwLjAwMjY5IC0wLjAwNzgxLDAgLTAuMDEwNSwwYy0xLjQzMjQ0LDAuMzgxNjMgLTIuMjg5NzEsMS44NTg3IC0xLjkwNTQsMy4yOTExNGMwLjAwMjY5LDAuMDA1MzggMC4wMDI1NiwwLjAwNzY5IDAuMDA1MjUsMC4wMTU3NWwxLjM4NTc0LDUuMTg2MDNjMC40NDM0NCwxLjQxNjMxIDEuOTUxLDIuMjAxODYgMy4zNjQ2MywxLjc1ODQyYzEuMzMzLC0wLjQxNjU2IDIuMTI1MSwtMS43ODE2IDEuODIxNDEsLTMuMTQ0MTdsLTEuMzg1NzQsLTUuMTg2MDNjLTAuMjgwMTcsLTEuMDc2MzQgLTEuMTc5NDMsLTEuODI3MzMgLTIuMjE1MDksLTEuOTc4ODh6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+                        style="width: 20px; height: 20px"
+                      />
+                      Postman
+                    </li>
+                    <li>
+                      <img
+                        alt="svgImg"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTU0LjI0LDkuMDRjLTEyLjQzLDAgLTIyLjYsMTAuMTcgLTIyLjYsMjIuNnYxNjIuNzJjMCwxMi40MyAxMC4xNywyMi42IDIyLjYsMjIuNmgxMjYuNTZjMTIuNDMsMCAyMi42LC0xMC4xNyAyMi42LC0yMi42di0xNjIuNzJjMCwtMTIuNDMgLTEwLjE3LC0yMi42IC0yMi42LC0yMi42ek01NC4yNCwxOC4wOGgxMjYuNTZjNy41MzkyMiwwIDEzLjU2LDYuMDIwNzggMTMuNTYsMTMuNTZ2MTYyLjcyYzAsNy41MzkyMiAtNi4wMjA3OCwxMy41NiAtMTMuNTYsMTMuNTZoLTEyNi41NmMtNy41MzkyMiwwIC0xMy41NiwtNi4wMjA3OCAtMTMuNTYsLTEzLjU2di0xNjIuNzJjMCwtNy41MzkyMiA2LjAyMDc4LC0xMy41NiAxMy41NiwtMTMuNTZ6TTk2Ljc1NjI1LDQwLjY4bC0yMi4zMTc1LDAuMTQxMjVjMCwwIDAuMDE3NjYsNzMuMzYxNzIgMC4xNDEyNSw3My4wMjYyNWM2OC40MTc5NywtMjYuNjI1NjIgNjMuMjgsLTcuNzY4NzUgNjMuMjgsLTcuNzY4NzV2NzguOTU4NzVoMjEuNDd2LTc4LjY3NjI1YzAsLTQzLjM0NjA5IC02Mi41NzM3NSwtMTguNjQ1IC02Mi41NzM3NSwtMTguNjQ1ek0xNDMuMDg2MjUsNDAuODIxMjVjMCwwIC03LjcxNTc4LDE3LjgxNTE2IC0xNi4yNDM3NSwyOC4yNWgyMy43M2MxMi44NzE0MSwtMTYuNjY3NSAxNy4wOTEyNSwtMjguMjUgMTcuMDkxMjUsLTI4LjI1ek03NC44NjI1LDEzOS45Nzg3NXY0NC45MTc1bDIyLjQ1ODc1LC0yMi40NTg3NXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                        style="width: 20px; height: 20px"
+                      />
+                      Heroku
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="projects">
-        <div class="text-puti">
-          <h2 class="display-4">Projects</h2>
+        <div class="vh-100 text-color-1">
+          <h3 class="text-uppercase">Projects</h3>
+        </div>
+      </section>
+
+      <section id="trainings">
+        <div class="vh-100 text-color-1">
+          <h3 class="text-uppercase">Trainings</h3>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="vh-100 text-color-1">
+          <h3 class="text-uppercase">Contact</h3>
         </div>
       </section>
     </main>
-    <!-- /.container -->
 
-    <footer class="footer py-3 mt-auto">
-      <div class="container text-puti">
+    <footer class="footer py-3 mt-auto bg-dark">
+      <div class="container text-color-1">
         <span>&copy; Mark Robert Bumatay 2021</span>
       </div>
     </footer>
