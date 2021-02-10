@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Portfolio made by Mwaaark" />
     <meta name="author" content="Mark Robert Bumatay" />
-    <meta name="generator" content="Hugo 0.79.0" />
     <title>Mwaaark | Portfolio</title>
     <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/starter-template/"
+      rel="shortcut icon"
+      href="/images/logo-rounded.png"
+      type="image/x-icon"
     />
-    <!-- Bootstrap core CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -44,72 +43,51 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
     <link href="app.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column vh-100 bg-color-5">
-    <!-- dagdagan mo ng section navbar, pag click tutuk sa baba -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mainNavbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mwaaark</a>
+        <a class="navbar-brand" href="">
+          <img
+            src="/images/logo.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-top"
+          />
+          Mwaaark</a
+        >
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarsExampleDefault"
-          aria-controls="navbarsExampleDefault"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#profile">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#tech-skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#trainings">Trainings</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown01"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Dropdown</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -122,7 +100,7 @@
           <h1 class="display-3 text-color-2">
             Hello, I'm Mark Robert Bumatay.
           </h1>
-          <p class="text-muted">
+          <p class="text-color-3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
             distinctio ad, accusantium illum facere optio eveniet aut aliquid a,
             corporis asperiores labore maxime. Suscipit et voluptate laudantium
@@ -230,9 +208,7 @@
                   <p class="card-text">
                     <small class="text-dark">by Colt Steele</small>
                   </p>
-                  <a href="#" class="btn btn-sm btn-outline-secondary">
-                    Learn More
-                  </a>
+                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
                 </div>
               </div>
             </div>
@@ -262,9 +238,7 @@
                       >by Excel Technical Skills and Career Center Inc.</small
                     >
                   </p>
-                  <a href="#" class="btn btn-sm btn-outline-secondary">
-                    Learn More
-                  </a>
+                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
                 </div>
               </div>
             </div>
@@ -294,9 +268,7 @@
                       >by 88 North East Venture Corp.
                     </small>
                   </p>
-                  <a href="#" class="btn btn-sm btn-outline-secondary">
-                    Learn More
-                  </a>
+                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
                 </div>
               </div>
             </div>
@@ -308,7 +280,7 @@
         <div class="text-color-1">
           <h3 class="text-uppercase mb-3">Projects</h3>
           <div class="row">
-            <div class="col-6 mb-3">
+            <div class="col-md-6 mb-3">
               <div class="card bg-color-2">
                 <img
                   src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
@@ -316,17 +288,17 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-color-5">Crowdfunding</h5>
+                  <h4 class="card-title text-color-5">Crowdfunding</h4>
                   <p class="card-text desc-truncated text-color-4">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Rerum, beatae minus, in commodi exercitationem nostrum modi
                     vel quo voluptatum assumenda magni totam sint animi vero
                     aliquid quisquam dolor rem incidunt!
                   </p>
-                  <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                  <a href="#" class="btn btn-secondary">Learn More</a>
                   <a
                     href="https://thawing-tor-92423.herokuapp.com/projects"
-                    class="btn btn-outline-secondary"
+                    class="btn btn-secondary"
                     target="_blank"
                     >Live Preview</a
                   >
@@ -339,21 +311,70 @@
 
       <section id="contact" class="mb-5">
         <div class="text-color-1">
-          <h3 class="text-uppercase">Get In Touch</h3>
+          <h3 class="text-uppercase mb-3">Get In Touch</h3>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                name="name"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">E-mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputSubject" class="form-label">Subject:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputSubject"
+                name="subject"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputMessage" class="form-label">Message:</label>
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                name="message"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-outline-secondary">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer py-3 mt-auto bg-dark">
+    <footer class="footer py-3 mt-auto bg-color-4">
       <div class="container text-color-1">
         <span>&copy; Mark Robert Bumatay 2021</span>
       </div>
     </footer>
 
     <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
