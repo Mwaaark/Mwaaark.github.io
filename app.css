@@ -56,11 +56,16 @@ body {
   color: #c9ada7;
 }
 
-section div h4 {
+section div h4,
+section .card h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
 .card-body ul {
   list-style: none;
+}
+
+#trainings .card {
+  /* border-color: #22223b; */
 }
