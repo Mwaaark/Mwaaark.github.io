@@ -66,6 +66,10 @@ section .card h5 {
   list-style: none;
 }
 
-#trainings .card {
-  /* border-color: #22223b; */
+.desc-truncated {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
