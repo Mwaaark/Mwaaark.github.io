@@ -60,12 +60,11 @@ body {
   text-decoration: none;
 }
 
-#profile a:hover {
+#profile .soc-med a:hover {
   color: #c9ada7;
 }
 
-section div h4,
-section .card h5 {
+section .card h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
@@ -89,4 +88,20 @@ section .card h5 {
 .navbar.scrolled {
   background: #22223bea;
   transition: background 500ms;
+}
+
+.footer {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #22223b,
+    #2e2e58,
+    #22223b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #22223b,
+    #2e2e58,
+    #22223b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
