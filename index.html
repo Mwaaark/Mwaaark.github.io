@@ -45,7 +45,7 @@
     </style>
     <link href="app.css" rel="stylesheet" />
   </head>
-  <body class="d-flex flex-column vh-100 bg-color-5">
+  <body class="d-flex flex-column vh-100">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mainNavbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
@@ -53,8 +53,8 @@
             src="/images/logo.png"
             alt=""
             width="30"
-            height="24"
-            class="d-inline-block align-top"
+            height="30"
+            class="d-inline-block mb-1"
           />
           Mwaaark</a
         >
@@ -71,7 +71,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-md-0">
             <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#profile">Home</a>
             </li>
@@ -94,13 +94,9 @@
 
     <main class="container">
       <section id="profile">
-        <div
-          class="vh-100 d-flex flex-column justify-content-center text-color-1"
-        >
-          <h1 class="display-3 text-color-2">
-            Hello, I'm Mark Robert Bumatay.
-          </h1>
-          <p class="text-color-3">
+        <div class="vh-100 d-flex flex-column justify-content-center fade-in">
+          <h1 class="display-3">Hello, I'm Mark Robert Bumatay.</h1>
+          <p>
             Graduate of Information System with experience working across the
             full-stack of web development. I've built a few projects by myself
             and I'm looking for a entry-level role where I can grow and learn
@@ -118,10 +114,10 @@
               class="rounded-circle me-3"
               style="width: 40px; height: 40px"
             />
-            <a href="https://twitter.com/mwaaark" class="text-color-1 me-3"
+            <a href="https://twitter.com/mwaaark" class="me-3"
               ><i class="fab fa-twitter"></i> Twitter
             </a>
-            <a href="https://github.com/Mwaaark" class="text-color-1"
+            <a href="https://github.com/Mwaaark" class="me-3"
               ><i class="fab fa-github"></i> Github
             </a>
           </div>
@@ -129,57 +125,63 @@
       </section>
 
       <section id="tech-skills" class="mb-5">
-        <div class="text-color-1">
-          <h3 class="text-uppercase mb-3">Technical Skills</h3>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card bg-color-2">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">Front-End</h6>
-                  <ul class="text-color-4">
-                    <li><i class="fab fa-html5"></i> HTML</li>
-                    <li><i class="fab fa-css3"></i> CSS</li>
-                    <li><i class="fab fa-js"></i> JavaScript</li>
-                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                  </ul>
-                </div>
+        <h3 class="mb-3">Technical Skills</h3>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Front-End</h6>
+                <ul class="text-description">
+                  <li><i class="fab fa-html5"></i> HTML</li>
+                  <li><i class="fab fa-css3"></i> CSS</li>
+                  <li><i class="fab fa-js"></i> JavaScript</li>
+                  <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="card bg-color-2">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">Back-End</h6>
-                  <ul class="text-color-4">
-                    <li><i class="fab fa-node-js"></i> NodeJS</li>
-                    <li><i class="fas fa-database"></i> MongoDB</li>
-                  </ul>
-                </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Back-End</h6>
+                <ul class="text-description">
+                  <li><i class="fab fa-node-js"></i> NodeJS</li>
+                  <li>
+                    <img
+                      class="skills-img"
+                      src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613116774/Portfolio/expres_sw1num.png"
+                      alt=""
+                    />
+                    Express
+                  </li>
+                  <li><i class="fas fa-database"></i> MongoDB</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card bg-color-2">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">Others</h6>
-                  <ul class="text-color-4">
-                    <li><i class="fab fa-github"></i> GitHub</li>
-                    <li>
-                      <img
-                        alt="svgImg"
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTg1LjY3OTgxLDguMDYyNWMtMTEuMzM5NTksMC4wMzY2NiAtMjIuODQ3MzYsMi41NjA4MSAtMzMuNzMwMjIsNy44NDcyOWMtMTguNTgxMzgsOS4wMjczMSAtMzIuODEzNDUsMjUuMDY4NDUgLTM5LjU2NzE0LDQ0LjU5MDQ1Yy0xNC4wOTMyNSw0MC42NTExMiA3LjQzNzc0LDg1LjAyNjc1IDQ4LjA5MTU1LDk5LjExNzMxYzQwLjY1MzgxLDE0LjA5MDU2IDg1LjAyOTMxLC03LjQ0MDQzIDk5LjEyMjU2LC00OC4wOTE1NWM2LjgzNywtMTkuNTM4MTMgNS41NTk2LC00MS4wMDUyOSAtMy41NDgzNCwtNTkuNTk3NDFjLTEzLjUxMTgzLC0yNy44MDk4MyAtNDEuMzg5NDQsLTQzLjk1OTc4IC03MC4zNjg0MSwtNDMuODY2MDl6TTg0Ljc0NTQ4LDEzLjQwMDc2YzguMjc4NjYsLTAuMTQzMzIgMTYuNzIzMDEsMS4xNDA3NiAyNS4wMDExLDQuMDEwMjVjMTguMTcwMTksNi4yOTk1IDMzLjA5Nzc4LDE5LjU1NjUyIDQxLjQ5MzUzLDM2Ljg1ODY0YzguMzk4NDQsMTcuMzAyMTMgOS41NzIyLDM3LjIzNTgyIDMuMjc1MzksNTUuNDA4NjljLTEzLjExNzY5LDM3Ljg0IC01NC40MjQ2NSw1Ny44ODM5MiAtOTIuMjY3MzQsNDQuNzY4OTJjLTM3Ljg0MjY5LC0xMy4xMTUgLTU3Ljg4MzkyLC01NC40MjQ2NSAtNDQuNzY4OTIsLTkyLjI2NzMzYzEwLjI0NjA5LC0yOS41NjQ2IDM3LjY5OTU4LC00OC4yNjczMSA2Ny4yNjYyNCwtNDguNzc5MTh6TTg1LjAyODkzLDIyLjM1NTU5Yy0yLjI0NDA2LC0wLjAzMjI1IC00LjQ4OCwwLjA1ODA4IC02LjcyNCwwLjI2NzdjLTEuNDgzNSwwLjA0ODM4IC0yLjY0NDA4LDEuMjkwNjcgLTIuNTkzMDIsMi43NzE0OGMwLjA0ODM4LDEuNDgzNSAxLjI5MDY3LDIuNjQ0MDggMi43NzE0OCwyLjU5MzAyYzAuMTEwMTksLTAuMDAyNjggMC4yMjU3NSwtMC4wMTI2OCAwLjMzNTk0LC0wLjAzMTQ5YzIuMDIxLC0wLjIwOTYyIDQuMDQ5MzEsLTAuMzEyNTEgNi4wNzgzNywtMC4zMDQ0NWMxLjQ3MDA2LC0wLjIwNDI1IDIuNDkyODIsLTEuNTYxMzEgMi4yODg1NywtMy4wMjg2OWMtMC4xNTg1NiwtMS4xMzk1IC0xLjAyNTkxLC0yLjA1MjU4IC0yLjE1NzM1LC0yLjI2NzU4ek02Ny4zMjkyMiwyNC44MzgzOGMtMC4zNDY5LC0wLjAzODA5IC0wLjcxMDEzLC0wLjAwNjQyIC0xLjA2NTU1LDAuMDk5NzNjLTE4LjkxMTk0LDUuNzUzOTQgLTMzLjk0NDcyLDIwLjE3ODIxIC00MC40Njk5NywzOC44Mzc1M2MtMC41MjY3NSwxLjM4Njc1IDAuMTcyMjEsMi45Mzc2IDEuNTU4OTYsMy40NjQzNWMxLjM4Njc1LDAuNTI2NzUgMi45Mzc2MSwtMC4xNjY5NiAzLjQ2NDM2LC0xLjU1MzcxYzAuMDE4ODEsLTAuMDQ1NjkgMC4wMzM4LC0wLjA5MzM1IDAuMDQ3MjQsLTAuMTQxNzJsLTAuMDk0NDgsMC4wOTQ0OGM1Ljk1MjgxLC0xNy4wODcxMiAxOS43MjE1NSwtMzAuMzA1NTEgMzcuMDM3MTEsLTM1LjU1Njg5YzEuNDIxNjksLTAuNDI0NjIgMi4yMjUwNCwtMS45MjE5NCAxLjgwMDQyLC0zLjM0MzYzYy0wLjMxODQ3LC0xLjA2NjI3IC0xLjIzNzM4LC0xLjc4NTg5IC0yLjI3ODA4LC0xLjkwMDE1ek0xMjAuNzY5NTMsMzkuNjQwNjNjLTYuNDAxNjIsMCAtMTEuNTg0Niw1LjE4ODIyIC0xMS41ODQ2LDExLjU4OTg0YzAsNi40MDE2MyA1LjE4NTY2LDExLjU5NTA5IDExLjU4NDYsMTEuNTk1MDljMS42NTAxMiwwIDMuMjEzMiwtMC4zNTgwNyA0LjYzNDg5LC0wLjk4MTU3bC04LjUwMzQyLC04Ljc4Njg2Yy0wLjE3NzM4LC0wLjE4Mjc1IC0wLjI3MzIsLTAuNDMyMzEgLTAuMjYyNDUsLTAuNjg3NjJjMC4wMDgwNiwtMC4yNTUzMSAwLjEyNDEzLC0wLjQ5NzMxIDAuMzE0OTQsLTAuNjY2NjNsMTAuNzk3MjQsLTkuNjY4N2MtMS45NDU3NSwtMS40ODA4MSAtNC4zNDc0NSwtMi4zOTM1NSAtNi45ODEyLC0yLjM5MzU1ek0xMjkuMTY3OTcsNDMuMjgzNDVsLTEwLjIzNTYsOS4xNzAwNGw4LjE4MzIzLDguNDU2MThjMy4xNTI0NCwtMi4wNzIwNiA1LjIzODUzLC01LjYyMzc2IDUuMjM4NTMsLTkuNjc5MmMwLC0zLjA4NTI1IC0xLjIyMTYsLTUuODY5NTggLTMuMTg2MTYsLTcuOTQ3MDJ6TTEyOC45NTI3Niw0OC43ODQ0MmMwLjM2MjMxLC0wLjAyMTggMC43MTg5OSwwLjE2NzcyIDAuODkyMzMsMC41MTQ0YzAuMDQ4MzcsMC4wOTk0NCAxLjE5NjA2LDIuNDY4NDcgLTAuMzQxMTksNS41NDI5N2MtMC4xNjM5NCwwLjMzMDU2IC0wLjQ5NTg0LDAuNTE5NjUgLTAuODM5ODQsMC41MTk2NWMtMC4xMzk3NSwwIC0wLjI4NTU1LC0wLjAzMjU0IC0wLjQxOTkyLC0wLjA5OTczYy0wLjQ2NDk0LC0wLjIzMTEyIC0wLjY1MzczLC0wLjc5MjE0IC0wLjQxOTkyLC0xLjI1OTc3YzEuMDk5MTksLTIuMTk1NjkgMC4zNjU1LC0zLjgwNjU5IDAuMzM1OTQsLTMuODczNzhjLTAuMjIwMzgsLTAuNDY0OTQgLTAuMDI2NTgsLTEuMDIzNTIgMC40MzU2NywtMS4yNDkyN2MwLjExNTU2LC0wLjA1NTc3IDAuMjM2MTYsLTAuMDg3MjIgMC4zNTY5MywtMC4wOTQ0OHpNMTA1LjkwOTU1LDU4LjIwNjQyYy0xLjcyODA2LDAuMDc0NTggLTMuNjg5MTQsMC40OTM5NSAtNS44MDAxNywxLjI1NDUyYy04LjM5ODQ0LDMuMDIzNDQgLTE4LjQ3NjU2LDE0LjEwOTM4IC0xOC40NzY1NiwxNC4xMDkzOGwtOC4wODM0OSw5LjM3NDc2bDYuNjM0NzcsNi41MTkyOWwzMC4xMjQxNCwtMzAuNDM5MDhjLTEuMTc1NzgsLTAuNjIwODEgLTIuNjcwNjIsLTAuODkzNDMgLTQuMzk4NjgsLTAuODE4ODV6TTExMS44MDQyLDYwLjE5MDU1bC0zMC4yODE2MiwzMC41OTY1NmwzLjkxMDUyLDMuODQ3NTRsMjIuNzM4NzcsLTIzLjA2NDIxYzAuMDY3MTksLTAuMDY0NSA0Ljk3MTI1LC00LjkwNDIzIDQuNzI5MzcsLTkuMjAxNTRjLTAuMjIzMDYsLTAuODUxOTQgLTAuNTg2NDIsLTEuNTg5NzggLTEuMDk3MDUsLTIuMTc4MzV6TTExMi4yNjA4Niw2OS41NDQzMWMtMS4zMDYxMywxLjkxNjE5IC0yLjY1MDY3LDMuMjQ5MTkgLTIuNzY2MjMsMy4zNTkzOGwtMjIuNzIzMDIsMjMuMDQzMjFsMy4wMTgxOSwyLjk3MDk1YzAuMzA2MzcsLTAuMjc5NSAwLjYwMTcxLC0wLjUzOTIyIDAuOTA4MDgsLTAuODI0MWMxNi4zNzQ5NCwtMTUuMTg0MzggMTkuODIxNDksLTIxLjY2MTM4IDIxLjU2Mjk5LC0yOC41NDk0NHpNNzIuMzE1OCw4NC4zNzI4bC03LjQ3OTg2LDguNjgxODlsMTMuNzE1NywtMi41NTEwM3pNNzkuODc0MzksOTEuODAwMTdsLTQuNzI0MTIsNC44OTIwOWw4LjM4Nzk0LC0xLjI5MTI2ek04NS4yMDc0LDk3LjA0OTE5bC0xMi4yMTQ0OCwxLjg3OTE1bC0yMi4zOTIzMywyMy4xNzQ0NGw5LjM5NTc1LDkuMjM4MjhsMC40NzI0MSwwLjAxMDVsLTIuMzUxNTYsLTkuNzQyMTljMCwwIDEyLjk1NTMsLTUuODg0NTcgMzAuMjgxNjIsLTIxLjQzMTc2ek0xMzkuMDU3MTMsOTkuNzYyOTRjLTEuMDI5ODYsMC4xODgwOCAtMS44OTQ0OCwwLjk3MTIgLTIuMTM2MzUsMi4wNTc2MmMtMC4zMDM2OSwxLjM2MjU2IDAuNDgzMTYsMi43MzI4NSAxLjgxNjE2LDMuMTQ5NDFsNS4xODYwMywxLjM4NTc0YzEuNDQ4NTYsMC4zMjI1IDIuODg0NjYsLTAuNTg4MDYgMy4yMDcxNiwtMi4wMzY2MmMwLjMwMzY5LC0xLjM2MjU2IC0wLjQ4ODQxLC0yLjczMjg1IC0xLjgyMTQxLC0zLjE0OTQxbC01LjE4MDc5LC0xLjM4NTc0Yy0wLjM2MjE0LC0wLjA4MDYyIC0wLjcyNzUxLC0wLjA4MzY5IC0xLjA3MDgsLTAuMDIwOTl6TTEzNC40OTA0OCwxMTIuNDEzMDljLTEuMDQzMDksLTAuMDkxNzEgLTIuMDg4NzMsMC40MzU2MyAtMi42MDg3NiwxLjQxNzI0Yy0wLjY2MTEyLDEuMjQ3IC0wLjI0MzMsMi43OTM0IDAuOTU1MzIsMy41Mzc4NGw0LjY1MDY0LDIuNjc3YzEuMjk1MzgsMC43MzkwNiAyLjk0NTc1LDAuMjg3NTYgMy42ODQ4MiwtMS4wMDc4MWMwLjczOTA2LC0xLjI5NTM4IDAuMjg3NTYsLTIuOTQ1NzUgLTEuMDA3ODEsLTMuNjg0ODJsLTQuNjUwNjQsLTIuNjM1MDFjLTAuMzI3ODgsLTAuMTc0MDIgLTAuNjc1ODYsLTAuMjczODcgLTEuMDIzNTYsLTAuMzA0NDR6TTEyNS44NjEwOCwxMjMuMTczNThjLTAuNjg2OTksMCAtMS4zNjk0OSwwLjI2MzI5IC0xLjg5NDksMC43ODczNWMtMS4wNDgxMiwxLjA0ODEyIC0xLjA0ODEyLDIuNzQ2OTIgMCwzLjc5NTA0bDMuNzk1MDQsMy44MDAyOWMxLjA0ODEzLDEuMDQ4MTIgMi43NDY5MiwxLjA0ODEyIDMuNzk1MDUsMGMxLjA0ODEyLC0xLjA0ODEyIDEuMDQ4MTIsLTIuNzUyMTcgMCwtMy44MDAyOWwtMy43OTUwNSwtMy43OTUwNGMtMC41MjQwNiwtMC41MjQwNiAtMS4yMTMxNSwtMC43ODczNSAtMS45MDAxNSwtMC43ODczNXpNNDkuMjkzNTgsMTIzLjQ1NzAzbC03LjMwMTM5LDcuNTU4NTlsMTUuMjc0NjYsMC4yNzgyek0xMTQuNjc1NDIsMTMxLjUxOTUzYy0wLjM0NTI2LDAuMDQzNzYgLTAuNjgyNzUsMC4xNTU3NSAtMS4wMDI1NiwwLjM0MTE5Yy0xLjI3NjU2LDAuNzQ3MTMgLTEuNzEyODIsMi4zODk4MiAtMC45NzEwNywzLjY2OTA3bDIuNjYxMjUsNC42Mjk2NGMwLjY5NjA2LDEuMzExNSAyLjMxODI2LDEuODA4ODUgMy42MjcwOCwxLjExMjc5YzEuMzExNSwtMC42OTYwNiAxLjgwODg1LC0yLjMxODI2IDEuMTEyNzksLTMuNjI3MDdjLTAuMDI5NTYsLTAuMDUzNzUgLTAuMDU2OTgsLTAuMTExNjYgLTAuMDg5MjMsLTAuMTYyNzJsLTIuNjc3LC00LjY1MDY0Yy0wLjU2MDM0LC0wLjk1OTQ0IC0xLjYyNTQ4LC0xLjQ0MzUyIC0yLjY2MTI1LC0xLjMxMjI2ek0xMDIuNzYwMTMsMTM2Ljc1ODA2Yy0wLjM0NTIyLC0wLjA1MDUyIC0wLjcwMTUyLC0wLjAzNTY1IC0xLjA2MDMsMC4wNTc3NGMtMC4wMDUzOCwwLjAwMjY5IC0wLjAwNzgxLDAgLTAuMDEwNSwwYy0xLjQzMjQ0LDAuMzgxNjMgLTIuMjg5NzEsMS44NTg3IC0xLjkwNTQsMy4yOTExNGMwLjAwMjY5LDAuMDA1MzggMC4wMDI1NiwwLjAwNzY5IDAuMDA1MjUsMC4wMTU3NWwxLjM4NTc0LDUuMTg2MDNjMC40NDM0NCwxLjQxNjMxIDEuOTUxLDIuMjAxODYgMy4zNjQ2MywxLjc1ODQyYzEuMzMzLC0wLjQxNjU2IDIuMTI1MSwtMS43ODE2IDEuODIxNDEsLTMuMTQ0MTdsLTEuMzg1NzQsLTUuMTg2MDNjLTAuMjgwMTcsLTEuMDc2MzQgLTEuMTc5NDMsLTEuODI3MzMgLTIuMjE1MDksLTEuOTc4ODh6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
-                        style="width: 20px; height: 20px"
-                      />
-                      Postman
-                    </li>
-                    <li>
-                      <img
-                        alt="svgImg"
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTU0LjI0LDkuMDRjLTEyLjQzLDAgLTIyLjYsMTAuMTcgLTIyLjYsMjIuNnYxNjIuNzJjMCwxMi40MyAxMC4xNywyMi42IDIyLjYsMjIuNmgxMjYuNTZjMTIuNDMsMCAyMi42LC0xMC4xNyAyMi42LC0yMi42di0xNjIuNzJjMCwtMTIuNDMgLTEwLjE3LC0yMi42IC0yMi42LC0yMi42ek01NC4yNCwxOC4wOGgxMjYuNTZjNy41MzkyMiwwIDEzLjU2LDYuMDIwNzggMTMuNTYsMTMuNTZ2MTYyLjcyYzAsNy41MzkyMiAtNi4wMjA3OCwxMy41NiAtMTMuNTYsMTMuNTZoLTEyNi41NmMtNy41MzkyMiwwIC0xMy41NiwtNi4wMjA3OCAtMTMuNTYsLTEzLjU2di0xNjIuNzJjMCwtNy41MzkyMiA2LjAyMDc4LC0xMy41NiAxMy41NiwtMTMuNTZ6TTk2Ljc1NjI1LDQwLjY4bC0yMi4zMTc1LDAuMTQxMjVjMCwwIDAuMDE3NjYsNzMuMzYxNzIgMC4xNDEyNSw3My4wMjYyNWM2OC40MTc5NywtMjYuNjI1NjIgNjMuMjgsLTcuNzY4NzUgNjMuMjgsLTcuNzY4NzV2NzguOTU4NzVoMjEuNDd2LTc4LjY3NjI1YzAsLTQzLjM0NjA5IC02Mi41NzM3NSwtMTguNjQ1IC02Mi41NzM3NSwtMTguNjQ1ek0xNDMuMDg2MjUsNDAuODIxMjVjMCwwIC03LjcxNTc4LDE3LjgxNTE2IC0xNi4yNDM3NSwyOC4yNWgyMy43M2MxMi44NzE0MSwtMTYuNjY3NSAxNy4wOTEyNSwtMjguMjUgMTcuMDkxMjUsLTI4LjI1ek03NC44NjI1LDEzOS45Nzg3NXY0NC45MTc1bDIyLjQ1ODc1LC0yMi40NTg3NXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
-                        style="width: 20px; height: 20px"
-                      />
-                      Heroku
-                    </li>
-                  </ul>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Others</h6>
+                <ul class="text-description">
+                  <li><i class="fab fa-github"></i> GitHub</li>
+                  <li>
+                    <img
+                      class="skills-img"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTg1LjY3OTgxLDguMDYyNWMtMTEuMzM5NTksMC4wMzY2NiAtMjIuODQ3MzYsMi41NjA4MSAtMzMuNzMwMjIsNy44NDcyOWMtMTguNTgxMzgsOS4wMjczMSAtMzIuODEzNDUsMjUuMDY4NDUgLTM5LjU2NzE0LDQ0LjU5MDQ1Yy0xNC4wOTMyNSw0MC42NTExMiA3LjQzNzc0LDg1LjAyNjc1IDQ4LjA5MTU1LDk5LjExNzMxYzQwLjY1MzgxLDE0LjA5MDU2IDg1LjAyOTMxLC03LjQ0MDQzIDk5LjEyMjU2LC00OC4wOTE1NWM2LjgzNywtMTkuNTM4MTMgNS41NTk2LC00MS4wMDUyOSAtMy41NDgzNCwtNTkuNTk3NDFjLTEzLjUxMTgzLC0yNy44MDk4MyAtNDEuMzg5NDQsLTQzLjk1OTc4IC03MC4zNjg0MSwtNDMuODY2MDl6TTg0Ljc0NTQ4LDEzLjQwMDc2YzguMjc4NjYsLTAuMTQzMzIgMTYuNzIzMDEsMS4xNDA3NiAyNS4wMDExLDQuMDEwMjVjMTguMTcwMTksNi4yOTk1IDMzLjA5Nzc4LDE5LjU1NjUyIDQxLjQ5MzUzLDM2Ljg1ODY0YzguMzk4NDQsMTcuMzAyMTMgOS41NzIyLDM3LjIzNTgyIDMuMjc1MzksNTUuNDA4NjljLTEzLjExNzY5LDM3Ljg0IC01NC40MjQ2NSw1Ny44ODM5MiAtOTIuMjY3MzQsNDQuNzY4OTJjLTM3Ljg0MjY5LC0xMy4xMTUgLTU3Ljg4MzkyLC01NC40MjQ2NSAtNDQuNzY4OTIsLTkyLjI2NzMzYzEwLjI0NjA5LC0yOS41NjQ2IDM3LjY5OTU4LC00OC4yNjczMSA2Ny4yNjYyNCwtNDguNzc5MTh6TTg1LjAyODkzLDIyLjM1NTU5Yy0yLjI0NDA2LC0wLjAzMjI1IC00LjQ4OCwwLjA1ODA4IC02LjcyNCwwLjI2NzdjLTEuNDgzNSwwLjA0ODM4IC0yLjY0NDA4LDEuMjkwNjcgLTIuNTkzMDIsMi43NzE0OGMwLjA0ODM4LDEuNDgzNSAxLjI5MDY3LDIuNjQ0MDggMi43NzE0OCwyLjU5MzAyYzAuMTEwMTksLTAuMDAyNjggMC4yMjU3NSwtMC4wMTI2OCAwLjMzNTk0LC0wLjAzMTQ5YzIuMDIxLC0wLjIwOTYyIDQuMDQ5MzEsLTAuMzEyNTEgNi4wNzgzNywtMC4zMDQ0NWMxLjQ3MDA2LC0wLjIwNDI1IDIuNDkyODIsLTEuNTYxMzEgMi4yODg1NywtMy4wMjg2OWMtMC4xNTg1NiwtMS4xMzk1IC0xLjAyNTkxLC0yLjA1MjU4IC0yLjE1NzM1LC0yLjI2NzU4ek02Ny4zMjkyMiwyNC44MzgzOGMtMC4zNDY5LC0wLjAzODA5IC0wLjcxMDEzLC0wLjAwNjQyIC0xLjA2NTU1LDAuMDk5NzNjLTE4LjkxMTk0LDUuNzUzOTQgLTMzLjk0NDcyLDIwLjE3ODIxIC00MC40Njk5NywzOC44Mzc1M2MtMC41MjY3NSwxLjM4Njc1IDAuMTcyMjEsMi45Mzc2IDEuNTU4OTYsMy40NjQzNWMxLjM4Njc1LDAuNTI2NzUgMi45Mzc2MSwtMC4xNjY5NiAzLjQ2NDM2LC0xLjU1MzcxYzAuMDE4ODEsLTAuMDQ1NjkgMC4wMzM4LC0wLjA5MzM1IDAuMDQ3MjQsLTAuMTQxNzJsLTAuMDk0NDgsMC4wOTQ0OGM1Ljk1MjgxLC0xNy4wODcxMiAxOS43MjE1NSwtMzAuMzA1NTEgMzcuMDM3MTEsLTM1LjU1Njg5YzEuNDIxNjksLTAuNDI0NjIgMi4yMjUwNCwtMS45MjE5NCAxLjgwMDQyLC0zLjM0MzYzYy0wLjMxODQ3LC0xLjA2NjI3IC0xLjIzNzM4LC0xLjc4NTg5IC0yLjI3ODA4LC0xLjkwMDE1ek0xMjAuNzY5NTMsMzkuNjQwNjNjLTYuNDAxNjIsMCAtMTEuNTg0Niw1LjE4ODIyIC0xMS41ODQ2LDExLjU4OTg0YzAsNi40MDE2MyA1LjE4NTY2LDExLjU5NTA5IDExLjU4NDYsMTEuNTk1MDljMS42NTAxMiwwIDMuMjEzMiwtMC4zNTgwNyA0LjYzNDg5LC0wLjk4MTU3bC04LjUwMzQyLC04Ljc4Njg2Yy0wLjE3NzM4LC0wLjE4Mjc1IC0wLjI3MzIsLTAuNDMyMzEgLTAuMjYyNDUsLTAuNjg3NjJjMC4wMDgwNiwtMC4yNTUzMSAwLjEyNDEzLC0wLjQ5NzMxIDAuMzE0OTQsLTAuNjY2NjNsMTAuNzk3MjQsLTkuNjY4N2MtMS45NDU3NSwtMS40ODA4MSAtNC4zNDc0NSwtMi4zOTM1NSAtNi45ODEyLC0yLjM5MzU1ek0xMjkuMTY3OTcsNDMuMjgzNDVsLTEwLjIzNTYsOS4xNzAwNGw4LjE4MzIzLDguNDU2MThjMy4xNTI0NCwtMi4wNzIwNiA1LjIzODUzLC01LjYyMzc2IDUuMjM4NTMsLTkuNjc5MmMwLC0zLjA4NTI1IC0xLjIyMTYsLTUuODY5NTggLTMuMTg2MTYsLTcuOTQ3MDJ6TTEyOC45NTI3Niw0OC43ODQ0MmMwLjM2MjMxLC0wLjAyMTggMC43MTg5OSwwLjE2NzcyIDAuODkyMzMsMC41MTQ0YzAuMDQ4MzcsMC4wOTk0NCAxLjE5NjA2LDIuNDY4NDcgLTAuMzQxMTksNS41NDI5N2MtMC4xNjM5NCwwLjMzMDU2IC0wLjQ5NTg0LDAuNTE5NjUgLTAuODM5ODQsMC41MTk2NWMtMC4xMzk3NSwwIC0wLjI4NTU1LC0wLjAzMjU0IC0wLjQxOTkyLC0wLjA5OTczYy0wLjQ2NDk0LC0wLjIzMTEyIC0wLjY1MzczLC0wLjc5MjE0IC0wLjQxOTkyLC0xLjI1OTc3YzEuMDk5MTksLTIuMTk1NjkgMC4zNjU1LC0zLjgwNjU5IDAuMzM1OTQsLTMuODczNzhjLTAuMjIwMzgsLTAuNDY0OTQgLTAuMDI2NTgsLTEuMDIzNTIgMC40MzU2NywtMS4yNDkyN2MwLjExNTU2LC0wLjA1NTc3IDAuMjM2MTYsLTAuMDg3MjIgMC4zNTY5MywtMC4wOTQ0OHpNMTA1LjkwOTU1LDU4LjIwNjQyYy0xLjcyODA2LDAuMDc0NTggLTMuNjg5MTQsMC40OTM5NSAtNS44MDAxNywxLjI1NDUyYy04LjM5ODQ0LDMuMDIzNDQgLTE4LjQ3NjU2LDE0LjEwOTM4IC0xOC40NzY1NiwxNC4xMDkzOGwtOC4wODM0OSw5LjM3NDc2bDYuNjM0NzcsNi41MTkyOWwzMC4xMjQxNCwtMzAuNDM5MDhjLTEuMTc1NzgsLTAuNjIwODEgLTIuNjcwNjIsLTAuODkzNDMgLTQuMzk4NjgsLTAuODE4ODV6TTExMS44MDQyLDYwLjE5MDU1bC0zMC4yODE2MiwzMC41OTY1NmwzLjkxMDUyLDMuODQ3NTRsMjIuNzM4NzcsLTIzLjA2NDIxYzAuMDY3MTksLTAuMDY0NSA0Ljk3MTI1LC00LjkwNDIzIDQuNzI5MzcsLTkuMjAxNTRjLTAuMjIzMDYsLTAuODUxOTQgLTAuNTg2NDIsLTEuNTg5NzggLTEuMDk3MDUsLTIuMTc4MzV6TTExMi4yNjA4Niw2OS41NDQzMWMtMS4zMDYxMywxLjkxNjE5IC0yLjY1MDY3LDMuMjQ5MTkgLTIuNzY2MjMsMy4zNTkzOGwtMjIuNzIzMDIsMjMuMDQzMjFsMy4wMTgxOSwyLjk3MDk1YzAuMzA2MzcsLTAuMjc5NSAwLjYwMTcxLC0wLjUzOTIyIDAuOTA4MDgsLTAuODI0MWMxNi4zNzQ5NCwtMTUuMTg0MzggMTkuODIxNDksLTIxLjY2MTM4IDIxLjU2Mjk5LC0yOC41NDk0NHpNNzIuMzE1OCw4NC4zNzI4bC03LjQ3OTg2LDguNjgxODlsMTMuNzE1NywtMi41NTEwM3pNNzkuODc0MzksOTEuODAwMTdsLTQuNzI0MTIsNC44OTIwOWw4LjM4Nzk0LC0xLjI5MTI2ek04NS4yMDc0LDk3LjA0OTE5bC0xMi4yMTQ0OCwxLjg3OTE1bC0yMi4zOTIzMywyMy4xNzQ0NGw5LjM5NTc1LDkuMjM4MjhsMC40NzI0MSwwLjAxMDVsLTIuMzUxNTYsLTkuNzQyMTljMCwwIDEyLjk1NTMsLTUuODg0NTcgMzAuMjgxNjIsLTIxLjQzMTc2ek0xMzkuMDU3MTMsOTkuNzYyOTRjLTEuMDI5ODYsMC4xODgwOCAtMS44OTQ0OCwwLjk3MTIgLTIuMTM2MzUsMi4wNTc2MmMtMC4zMDM2OSwxLjM2MjU2IDAuNDgzMTYsMi43MzI4NSAxLjgxNjE2LDMuMTQ5NDFsNS4xODYwMywxLjM4NTc0YzEuNDQ4NTYsMC4zMjI1IDIuODg0NjYsLTAuNTg4MDYgMy4yMDcxNiwtMi4wMzY2MmMwLjMwMzY5LC0xLjM2MjU2IC0wLjQ4ODQxLC0yLjczMjg1IC0xLjgyMTQxLC0zLjE0OTQxbC01LjE4MDc5LC0xLjM4NTc0Yy0wLjM2MjE0LC0wLjA4MDYyIC0wLjcyNzUxLC0wLjA4MzY5IC0xLjA3MDgsLTAuMDIwOTl6TTEzNC40OTA0OCwxMTIuNDEzMDljLTEuMDQzMDksLTAuMDkxNzEgLTIuMDg4NzMsMC40MzU2MyAtMi42MDg3NiwxLjQxNzI0Yy0wLjY2MTEyLDEuMjQ3IC0wLjI0MzMsMi43OTM0IDAuOTU1MzIsMy41Mzc4NGw0LjY1MDY0LDIuNjc3YzEuMjk1MzgsMC43MzkwNiAyLjk0NTc1LDAuMjg3NTYgMy42ODQ4MiwtMS4wMDc4MWMwLjczOTA2LC0xLjI5NTM4IDAuMjg3NTYsLTIuOTQ1NzUgLTEuMDA3ODEsLTMuNjg0ODJsLTQuNjUwNjQsLTIuNjM1MDFjLTAuMzI3ODgsLTAuMTc0MDIgLTAuNjc1ODYsLTAuMjczODcgLTEuMDIzNTYsLTAuMzA0NDR6TTEyNS44NjEwOCwxMjMuMTczNThjLTAuNjg2OTksMCAtMS4zNjk0OSwwLjI2MzI5IC0xLjg5NDksMC43ODczNWMtMS4wNDgxMiwxLjA0ODEyIC0xLjA0ODEyLDIuNzQ2OTIgMCwzLjc5NTA0bDMuNzk1MDQsMy44MDAyOWMxLjA0ODEzLDEuMDQ4MTIgMi43NDY5MiwxLjA0ODEyIDMuNzk1MDUsMGMxLjA0ODEyLC0xLjA0ODEyIDEuMDQ4MTIsLTIuNzUyMTcgMCwtMy44MDAyOWwtMy43OTUwNSwtMy43OTUwNGMtMC41MjQwNiwtMC41MjQwNiAtMS4yMTMxNSwtMC43ODczNSAtMS45MDAxNSwtMC43ODczNXpNNDkuMjkzNTgsMTIzLjQ1NzAzbC03LjMwMTM5LDcuNTU4NTlsMTUuMjc0NjYsMC4yNzgyek0xMTQuNjc1NDIsMTMxLjUxOTUzYy0wLjM0NTI2LDAuMDQzNzYgLTAuNjgyNzUsMC4xNTU3NSAtMS4wMDI1NiwwLjM0MTE5Yy0xLjI3NjU2LDAuNzQ3MTMgLTEuNzEyODIsMi4zODk4MiAtMC45NzEwNywzLjY2OTA3bDIuNjYxMjUsNC42Mjk2NGMwLjY5NjA2LDEuMzExNSAyLjMxODI2LDEuODA4ODUgMy42MjcwOCwxLjExMjc5YzEuMzExNSwtMC42OTYwNiAxLjgwODg1LC0yLjMxODI2IDEuMTEyNzksLTMuNjI3MDdjLTAuMDI5NTYsLTAuMDUzNzUgLTAuMDU2OTgsLTAuMTExNjYgLTAuMDg5MjMsLTAuMTYyNzJsLTIuNjc3LC00LjY1MDY0Yy0wLjU2MDM0LC0wLjk1OTQ0IC0xLjYyNTQ4LC0xLjQ0MzUyIC0yLjY2MTI1LC0xLjMxMjI2ek0xMDIuNzYwMTMsMTM2Ljc1ODA2Yy0wLjM0NTIyLC0wLjA1MDUyIC0wLjcwMTUyLC0wLjAzNTY1IC0xLjA2MDMsMC4wNTc3NGMtMC4wMDUzOCwwLjAwMjY5IC0wLjAwNzgxLDAgLTAuMDEwNSwwYy0xLjQzMjQ0LDAuMzgxNjMgLTIuMjg5NzEsMS44NTg3IC0xLjkwNTQsMy4yOTExNGMwLjAwMjY5LDAuMDA1MzggMC4wMDI1NiwwLjAwNzY5IDAuMDA1MjUsMC4wMTU3NWwxLjM4NTc0LDUuMTg2MDNjMC40NDM0NCwxLjQxNjMxIDEuOTUxLDIuMjAxODYgMy4zNjQ2MywxLjc1ODQyYzEuMzMzLC0wLjQxNjU2IDIuMTI1MSwtMS43ODE2IDEuODIxNDEsLTMuMTQ0MTdsLTEuMzg1NzQsLTUuMTg2MDNjLTAuMjgwMTcsLTEuMDc2MzQgLTEuMTc5NDMsLTEuODI3MzMgLTIuMjE1MDksLTEuOTc4ODh6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+                      alt="svgImg"
+                    />
+                    Postman
+                  </li>
+                  <li>
+                    <img
+                      class="skills-img"
+                      alt="svgImg"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzRhNGU2OSI+PHBhdGggZD0iTTU0LjI0LDkuMDRjLTEyLjQzLDAgLTIyLjYsMTAuMTcgLTIyLjYsMjIuNnYxNjIuNzJjMCwxMi40MyAxMC4xNywyMi42IDIyLjYsMjIuNmgxMjYuNTZjMTIuNDMsMCAyMi42LC0xMC4xNyAyMi42LC0yMi42di0xNjIuNzJjMCwtMTIuNDMgLTEwLjE3LC0yMi42IC0yMi42LC0yMi42ek01NC4yNCwxOC4wOGgxMjYuNTZjNy41MzkyMiwwIDEzLjU2LDYuMDIwNzggMTMuNTYsMTMuNTZ2MTYyLjcyYzAsNy41MzkyMiAtNi4wMjA3OCwxMy41NiAtMTMuNTYsMTMuNTZoLTEyNi41NmMtNy41MzkyMiwwIC0xMy41NiwtNi4wMjA3OCAtMTMuNTYsLTEzLjU2di0xNjIuNzJjMCwtNy41MzkyMiA2LjAyMDc4LC0xMy41NiAxMy41NiwtMTMuNTZ6TTk2Ljc1NjI1LDQwLjY4bC0yMi4zMTc1LDAuMTQxMjVjMCwwIDAuMDE3NjYsNzMuMzYxNzIgMC4xNDEyNSw3My4wMjYyNWM2OC40MTc5NywtMjYuNjI1NjIgNjMuMjgsLTcuNzY4NzUgNjMuMjgsLTcuNzY4NzV2NzguOTU4NzVoMjEuNDd2LTc4LjY3NjI1YzAsLTQzLjM0NjA5IC02Mi41NzM3NSwtMTguNjQ1IC02Mi41NzM3NSwtMTguNjQ1ek0xNDMuMDg2MjUsNDAuODIxMjVjMCwwIC03LjcxNTc4LDE3LjgxNTE2IC0xNi4yNDM3NSwyOC4yNWgyMy43M2MxMi44NzE0MSwtMTYuNjY3NSAxNy4wOTEyNSwtMjguMjUgMTcuMDkxMjUsLTI4LjI1ek03NC44NjI1LDEzOS45Nzg3NXY0NC45MTc1bDIyLjQ1ODc1LC0yMi40NTg3NXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                    />
+                    Heroku
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -187,115 +189,105 @@
       </section>
 
       <section id="trainings" class="mb-5">
-        <div class="text-color-1">
-          <h3 class="text-uppercase mb-3">Trainings / Online Courses</h3>
-          <div class="card bg-color-2 mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/127179783_10158000885887075_5560818655775955696_n.jpg?_nc_cat=103&ccb=3&_nc_sid=825194&_nc_eui2=AeFCria-fzjXO_eWiJOpq78bYXPvLOUVD2Vhc-8s5RUPZQhoWp7lRqMAw1HQ_iVxvVby4ffxJ-K7VVkm9qX6gBB8&_nc_ohc=-TpNTmmrCLoAX9P9Lo0&_nc_ht=scontent.fmnl5-1.fna&oh=845cded7069a80fc659630517348c5c2&oe=604735D5"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">
-                    The Web Developer Bootcamp 2021 | Udemy
-                  </h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    Udemy's most popular web development course. This course was
-                    just completely overhauled to prepare students for the 2021
-                    job market, with over 60 hours of brand new content. This is
-                    the only course you need to learn web development. There are
-                    a lot of options for online developer training, but this
-                    course is without a doubt the most comprehensive and
-                    effective on the market.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-dark">by Colt Steele</small>
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                  <a
-                    href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012464/Portfolio/wdb_cert_c5lnyy.jpg"
-                    target="_blank"
-                    class="btn btn-sm btn-secondary"
-                  >
-                    View Certificate
-                  </a>
-                </div>
+        <h3 class="mb-3">Trainings / Online Courses</h3>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/127179783_10158000885887075_5560818655775955696_n.jpg?_nc_cat=103&ccb=3&_nc_sid=825194&_nc_eui2=AeFCria-fzjXO_eWiJOpq78bYXPvLOUVD2Vhc-8s5RUPZQhoWp7lRqMAw1HQ_iVxvVby4ffxJ-K7VVkm9qX6gBB8&_nc_ohc=-TpNTmmrCLoAX9P9Lo0&_nc_ht=scontent.fmnl5-1.fna&oh=845cded7069a80fc659630517348c5c2&oe=604735D5"
+                alt="..."
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">
+                  The Web Developer Bootcamp 2021 | Udemy
+                </h6>
+                <p class="card-text text-description">
+                  Udemy's most popular web development course. This course was
+                  just completely overhauled to prepare students for the 2021
+                  job market, with over 60 hours of brand new content.
+                </p>
+                <p class="card-text">
+                  <small class="text-dark">by Colt Steele</small>
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
+                <a
+                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012464/Portfolio/wdb_cert_c5lnyy.jpg"
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
           </div>
-          <div class="card bg-color-2 mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612936063/Portfolio/wd3_tl2zr7.jpg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">
-                    Web Development | TESDA
-                  </h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    A free training offered by TESDA that helped me learn the
-                    fundamentals of web development with HTML, CSS, JavaScript,
-                    jQuery, Bootstrap, MySQL & PHP.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-dark"
-                      >by Excel Technical Skills and Career Center Inc.</small
-                    >
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                  <a
-                    href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012556/Portfolio/wd_cert_fhqfsc.jpg"
-                    target="_blank"
-                    class="btn btn-sm btn-secondary"
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612936063/Portfolio/wd3_tl2zr7.jpg"
+                alt="..."
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Web Development | TESDA</h6>
+                <p class="card-text text-description">
+                  A free training offered by TESDA that helped me learn the
+                  fundamentals of web development with HTML, CSS, JavaScript,
+                  jQuery, Bootstrap, MySQL & PHP.
+                </p>
+                <p class="card-text">
+                  <small class="text-dark"
+                    >by Excel Technical Skills and Career Center Inc.</small
                   >
-                    View Certificate
-                  </a>
-                </div>
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
+                <a
+                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012556/Portfolio/wd_cert_fhqfsc.jpg"
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
           </div>
-          <div class="card bg-color-2 mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612927450/Portfolio/cwd2_o7m6kd.jpg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">
-                    Creative Web Design | TESDA
-                  </h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    Also a free training offered by TESDA that helped me
-                    conceptualize creative web designs using WordPress and its
-                    best free website builder called Elementor.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-dark"
-                      >by 88 North East Venture Corp.
-                    </small>
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                  <a
-                    href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012841/Portfolio/cwd_cert_qua0f7.jpg"
-                    target="_blank"
-                    class="btn btn-sm btn-secondary"
-                  >
-                    View Certificate
-                  </a>
-                </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612927450/Portfolio/cwd2_o7m6kd.jpg"
+                alt="..."
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Creative Web Design | TESDA</h6>
+                <p class="card-text text-description">
+                  Also a free training offered by TESDA that helped me
+                  conceptualize creative web designs using WordPress and its
+                  best free website builder called Elementor.
+                </p>
+                <p class="card-text">
+                  <small class="text-dark"
+                    >by 88 North East Venture Corp.
+                  </small>
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
+                <a
+                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012841/Portfolio/cwd_cert_qua0f7.jpg"
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                >
+                  View Certificate
+                </a>
               </div>
             </div>
           </div>
@@ -303,76 +295,71 @@
       </section>
 
       <section id="projects" class="mb-5">
-        <div class="text-color-1">
-          <h3 class="text-uppercase mb-3">Projects</h3>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <div class="card bg-color-2">
-                <img
-                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">Crowdfunding</h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    It is a platform supporting local entreprenuer's
-                    self-reliance through donation for co-existence and
-                    inclusive growth.
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                  <a
-                    href="https://thawing-tor-92423.herokuapp.com/projects"
-                    class="btn btn-sm btn-secondary"
-                    target="_blank"
-                    >Live Preview</a
-                  >
-                </div>
+        <h3 class="mb-3">Projects</h3>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Crowdfunding</h6>
+                <p class="card-text text-description">
+                  It is a platform supporting local entreprenuer's self-reliance
+                  through donation for co-existence and inclusive growth. (with
+                  admin dashboard)
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
+                <a
+                  href="https://thawing-tor-92423.herokuapp.com/projects"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="card bg-color-2">
-                <img
-                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">Portfolio</h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    A staic webpage that shows about my profile, technical
-                    skills, trainings & online courses, projects and a contact
-                    form
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Portfolio</h6>
+                <p class="card-text text-description">
+                  A static webpage that shows about my profile, technical
+                  skills, trainings & online courses, projects and a contact
+                  form
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="card bg-color-2">
-                <img
-                  src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613011497/Portfolio/ssucoed_krzhtv.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h6 class="card-title text-color-5">
-                    College of Education | SSU
-                  </h6>
-                  <p class="card-text desc-truncated text-color-4">
-                    A project of BSIS -3B students (Group 2) from College of
-                    Arts and Sciences. Submitted to Mr. Miguel D. Cabidog III (
-                    Information System Planning) and Mr. Nathaniel Guio Mendoza
-                    (Multimedia I)
-                  </p>
-                  <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                  <a
-                    href="https://ssucoedsite.wordpress.com/"
-                    class="btn btn-sm btn-secondary"
-                    target="_blank"
-                    >Live Preview</a
-                  >
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613011497/Portfolio/ssucoed_krzhtv.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">College of Education | SSU</h6>
+                <p class="card-text text-description">
+                  A group project of BSIS - 3B students (Group 2) submitted to
+                  Mr. Miguel Cabidog III ( Information System Planning) and Mr.
+                  Nathaniel Guio Mendoza (Multimedia I)
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
+                <a
+                  href="https://ssucoedsite.wordpress.com/"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
               </div>
             </div>
           </div>
@@ -380,66 +367,61 @@
       </section>
 
       <section id="contact" class="mb-5">
-        <div class="text-color-1">
-          <h3 class="text-uppercase mb-3">Get In Touch</h3>
-          <form
-            class="row g-3"
-            action="mailto:markrobertbum@gmail.com"
-            method="POST"
-            enctype="text/plain"
-          >
-            <div class="col-6">
-              <label for="inputName" class="form-label">Name:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputName"
-                name="name"
-                required
-              />
-            </div>
-            <div class="col-6">
-              <label for="inputEmail" class="form-label">E-mail:</label>
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail"
-                name="email"
-                required
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputSubject" class="form-label">Subject:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputSubject"
-                name="subject"
-                required
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputMessage" class="form-label">Message:</label>
-              <textarea
-                class="form-control"
-                id="inputMessage"
-                name="message"
-                rows="3"
-                required
-              ></textarea>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-outline-secondary">Send Message</button>
-            </div>
-          </form>
-        </div>
+        <h3 class="mb-3">Get In Touch</h3>
+        <form
+          class="row g-3"
+          action="https://formspree.io/f/myybagad"
+          method="POST"
+        >
+          <div class="col-6">
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="email" class="form-label">E-mail:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="subject" class="form-label">Subject:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message:</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-outline-secondary">Send Message</button>
+          </div>
+        </form>
       </section>
     </main>
 
     <footer class="footer py-3 mt-auto">
-      <div class="container text-color-1">
-        <span>&copy; Mark Robert Bumatay 2021</span>
-      </div>
+      <div class="container">&copy; Mark Robert Bumatay 2021</div>
     </footer>
 
     <script
