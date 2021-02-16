@@ -104,7 +104,7 @@
             success of the company.
           </p>
           <div class="col-12 mb-3">
-            <a href="#contact" class="btn btn-outline-secondary"
+            <a href="#contact" class="btn btn-outline-secondary btn-lg"
               >Get In Touch</a
             >
           </div>
@@ -129,7 +129,7 @@
         <h3 class="mb-3">Technical Skills</h3>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-body">
                 <h6 class="card-title">Front-End</h6>
                 <ul class="text-description">
@@ -142,7 +142,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-body">
                 <h6 class="card-title">Back-End</h6>
                 <ul class="text-description">
@@ -160,8 +160,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
               <div class="card-body">
                 <h6 class="card-title">Others</h6>
                 <ul class="text-description">
@@ -191,104 +191,201 @@
 
       <section id="trainings" class="mb-5">
         <h3 class="mb-3">Trainings / Online Courses</h3>
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/127179783_10158000885887075_5560818655775955696_n.jpg?_nc_cat=103&ccb=3&_nc_sid=825194&_nc_eui2=AeFCria-fzjXO_eWiJOpq78bYXPvLOUVD2Vhc-8s5RUPZQhoWp7lRqMAw1HQ_iVxvVby4ffxJ-K7VVkm9qX6gBB8&_nc_ohc=-TpNTmmrCLoAX9P9Lo0&_nc_ht=scontent.fmnl5-1.fna&oh=845cded7069a80fc659630517348c5c2&oe=604735D5"
-                alt="..."
-                class="img-fluid"
-              />
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="btn btn-sm btn-outline-secondary active me-3"
+              id="pills-completed-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-completed"
+              type="button"
+              role="tab"
+              aria-controls="pills-completed"
+              aria-selected="true"
+            >
+              Completed
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="btn btn-sm btn-outline-secondary"
+              id="pills-inprogress-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-inprogress"
+              type="button"
+              role="tab"
+              aria-controls="pills-inprogress"
+              aria-selected="false"
+            >
+              In Progress
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-completed"
+            role="tabpanel"
+            aria-labelledby="pills-completed-tab"
+          >
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/127179783_10158000885887075_5560818655775955696_n.jpg?_nc_cat=103&ccb=3&_nc_sid=825194&_nc_eui2=AeFCria-fzjXO_eWiJOpq78bYXPvLOUVD2Vhc-8s5RUPZQhoWp7lRqMAw1HQ_iVxvVby4ffxJ-K7VVkm9qX6gBB8&_nc_ohc=-TpNTmmrCLoAX9P9Lo0&_nc_ht=scontent.fmnl5-1.fna&oh=845cded7069a80fc659630517348c5c2&oe=604735D5"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      The Web Developer Bootcamp 2021 | Udemy
+                    </h6>
+                    <p class="card-text text-description">
+                      Udemy's most popular web development course. This course
+                      was just completely overhauled to prepare students for the
+                      2021 job market, with over 60 hours of brand new content.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-dark">by Colt Steele</small>
+                    </p>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      Learn More
+                    </a>
+                    <a
+                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012464/Portfolio/wdb_cert_c5lnyy.jpg"
+                      target="_blank"
+                      class="btn btn-sm btn-secondary"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h6 class="card-title">
-                  The Web Developer Bootcamp 2021 | Udemy
-                </h6>
-                <p class="card-text text-description">
-                  Udemy's most popular web development course. This course was
-                  just completely overhauled to prepare students for the 2021
-                  job market, with over 60 hours of brand new content.
-                </p>
-                <p class="card-text">
-                  <small class="text-dark">by Colt Steele</small>
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                <a
-                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012464/Portfolio/wdb_cert_c5lnyy.jpg"
-                  target="_blank"
-                  class="btn btn-sm btn-secondary"
-                >
-                  View Certificate
-                </a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612936063/Portfolio/wd3_tl2zr7.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">Web Development | TESDA</h6>
+                    <p class="card-text text-description">
+                      A free training offered by TESDA that helped me learn the
+                      fundamentals of web development using HTML, CSS,
+                      JavaScript, jQuery, Bootstrap, MySQL & PHP.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-dark"
+                        >by Excel Technical Skills and Career Center Inc.</small
+                      >
+                    </p>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      Learn More
+                    </a>
+                    <a
+                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012556/Portfolio/wd_cert_fhqfsc.jpg"
+                      target="_blank"
+                      class="btn btn-sm btn-secondary"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612927450/Portfolio/cwd2_o7m6kd.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">Creative Web Design | TESDA</h6>
+                    <p class="card-text text-description">
+                      Also a free training offered by TESDA that helped me
+                      conceptualize creative web designs using WordPress and its
+                      best free website builder called Elementor.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-dark"
+                        >by 88 North East Venture Corp.
+                      </small>
+                    </p>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      Learn More
+                    </a>
+                    <a
+                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012841/Portfolio/cwd_cert_qua0f7.jpg"
+                      target="_blank"
+                      class="btn btn-sm btn-secondary"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612936063/Portfolio/wd3_tl2zr7.jpg"
-                alt="..."
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h6 class="card-title">Web Development | TESDA</h6>
-                <p class="card-text text-description">
-                  A free training offered by TESDA that helped me learn the
-                  fundamentals of web development using HTML, CSS, JavaScript,
-                  jQuery, Bootstrap, MySQL & PHP.
-                </p>
-                <p class="card-text">
-                  <small class="text-dark"
-                    >by Excel Technical Skills and Career Center Inc.</small
-                  >
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                <a
-                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012556/Portfolio/wd_cert_fhqfsc.jpg"
-                  target="_blank"
-                  class="btn btn-sm btn-secondary"
-                >
-                  View Certificate
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612927450/Portfolio/cwd2_o7m6kd.jpg"
-                alt="..."
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h6 class="card-title">Creative Web Design | TESDA</h6>
-                <p class="card-text text-description">
-                  Also a free training offered by TESDA that helped me
-                  conceptualize creative web designs using WordPress and its
-                  best free website builder called Elementor.
-                </p>
-                <p class="card-text">
-                  <small class="text-dark"
-                    >by 88 North East Venture Corp.
-                  </small>
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary"> Learn More </a>
-                <a
-                  href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613012841/Portfolio/cwd_cert_qua0f7.jpg"
-                  target="_blank"
-                  class="btn btn-sm btn-secondary"
-                >
-                  View Certificate
-                </a>
+          <div
+            class="tab-pane fade"
+            id="pills-inprogress"
+            role="tabpanel"
+            aria-labelledby="pills-inprogress-tab"
+          >
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://img-a.udemycdn.com/course/240x135/2365628_0b60_8.jpg?0IYC4dGzfkhhjO8N3P2QFLebrpEKWq1E5HGK8MYpL64B1rDTVa22S4sWuqVu2rV-kVy9DYasskiQ3q3IsGPzILsvID_ezC7hqY61SHE7jA3vWFcA6wEuwiFmOkTJf9Ph"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Complete React Developer in 2021 (w/ Redux, Hooks,
+                      GraphQL)
+                    </h6>
+                    <p class="card-text text-description">
+                      This project based course will introduce all of the modern
+                      toolchain of a React developer in 2021. Instructors will
+                      teach building a massive e-commerce application similar to
+                      Shopify using React, Redux, React Hooks, React Suspense,
+                      React Router, GraphQL, Context API, Firebase, Redux-Saga,
+                      Stripe + more. This is going to be a full stack app (MERN
+                      stack), using Firebase.
+                    </p>
+                    <div class="progress mb-3">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 5%"
+                        aria-valuenow="5"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="d-flex justify-content-between card-text">
+                      <span>by Andrei Neagoie & Yihua Zhang </span>
+                      <span>5% Complete</span>
+                    </p>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -299,7 +396,7 @@
         <h3 class="mb-3">Projects</h3>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <div class="card">
+            <div class="card h-100">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
                 class="card-img-top"
@@ -323,7 +420,31 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card">
+            <div class="card h-100">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Shop Ignite</h6>
+                <p class="card-text text-description">
+                  An e-commerce platform made as a assessment project during my
+                  web development training on TESDA built with basic PHP, HTML,
+                  CSS, JavaScript, Bootstrap, CSS and MySQL
+                </p>
+                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
+                <a
+                  href="http://shop-ignite.000webhostapp.com/"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
                 class="card-img-top"
@@ -341,7 +462,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card">
+            <div class="card h-100">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613011497/Portfolio/ssucoed_krzhtv.png"
                 class="card-img-top"
@@ -421,8 +542,10 @@
       </section>
     </main>
 
-    <footer class="footer py-3 mt-auto">
-      <div class="container">&copy; Mark Robert Bumatay 2021</div>
+    <footer class="footer border-top text-center text-muted py-5 mt-auto">
+      <div class="container">
+        Copyright &copy; 2021 Portfolio by Mark Robert Bumatay
+      </div>
     </footer>
 
     <script

@@ -40,6 +40,10 @@ h1 {
   color: #c9ada7;
 }
 
+.btn-outline-secondary {
+  color: #f2e9e4;
+}
+
 h3 {
   color: #f2e9e4;
   text-transform: uppercase;
@@ -57,6 +61,15 @@ section .card {
 
 .card-body ul {
   list-style: none;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.progress .progress-bar {
+  background-color: #22223b;
 }
 
 .skills-img {
@@ -80,26 +93,6 @@ section .card {
 
 #contact .form-label {
   color: #9a8c98;
-}
-
-.footer {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #909097,
-    #2e2e58,
-    #22223b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #22223b,
-    #2e2e58,
-    #22223b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.footer div {
-  color: #f2e9e4;
 }
 
 .fade-in {
