@@ -59,6 +59,13 @@ h6 {
 
 section .card {
   background-color: #c9ada7;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+section .card:hover {
+  transform: scale(1.02);
 }
 
 .card-body ul {
@@ -82,6 +89,14 @@ section .card {
 
 .text-description {
   color: #4a4e69;
+}
+
+.text-trim {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .card .btn {
