@@ -1,6 +1,8 @@
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#mainNavbar");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
+const navbar = document.getElementById("mainNavbar");
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > navbar.clientHeight) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });
