@@ -1,8 +1,7 @@
-/* css */
-
 body {
   font-family: "Nunito", sans-serif;
   background-color: #22223b;
+  overflow-x: hidden;
 }
 
 #mainNavbar .navbar-brand,
@@ -59,13 +58,6 @@ h6 {
 
 section .card {
   background-color: #c9ada7;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
-}
-
-section .card:hover {
-  transform: scale(1.02);
 }
 
 .card-body ul {
@@ -111,20 +103,6 @@ section .card:hover {
 
 #contact .form-label {
   color: #9a8c98;
-}
-
-.fade-in {
-  animation: fadeIn ease 1s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 767px) {

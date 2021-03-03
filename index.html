@@ -28,21 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="app.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column vh-100">
@@ -94,7 +80,10 @@
 
     <main class="container">
       <section id="profile">
-        <div class="vh-100 d-flex flex-column justify-content-center fade-in">
+        <div
+          class="vh-100 d-flex flex-column justify-content-center"
+          data-aos="fade-up"
+        >
           <h1 class="display-3">Hello, I'm Mark Robert Bumatay.</h1>
           <p>
             Graduate of Information System with experience working across the
@@ -129,7 +118,7 @@
         <h3 class="mb-3">Technical Skills</h3>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up">
               <div class="card-body">
                 <h6 class="card-title">Front-End</h6>
                 <ul class="text-description">
@@ -142,7 +131,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
                 <h6 class="card-title">Back-End</h6>
                 <ul class="text-description">
@@ -161,7 +150,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="400">
               <div class="card-body">
                 <h6 class="card-title">Others</h6>
                 <ul class="text-description">
@@ -228,7 +217,7 @@
             role="tabpanel"
             aria-labelledby="pills-completed-tab"
           >
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-left">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -264,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -300,7 +289,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -396,7 +385,7 @@
         <h3 class="mb-3">Projects</h3>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-right">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
                 class="card-img-top"
@@ -420,7 +409,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-left" data-aos-delay="200">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
                 class="card-img-top"
@@ -444,7 +433,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-right" data-aos-delay="400">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
                 class="card-img-top"
@@ -462,7 +451,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-left" data-aos-delay="600">
               <img
                 src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613011497/Portfolio/ssucoed_krzhtv.png"
                 class="card-img-top"
@@ -488,7 +477,7 @@
         </div>
       </section>
 
-      <section id="contact" class="mb-5">
+      <section id="contact" class="mb-5" data-aos="zoom-in">
         <h3 class="mb-3">Get In Touch</h3>
         <form
           class="row g-3"
@@ -553,6 +542,7 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
