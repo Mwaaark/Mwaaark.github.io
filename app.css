@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: #22223b;
@@ -7,7 +11,8 @@ body {
 #mainNavbar .nav-link {
   font-family: "Montserrat", sans-serif;
   color: #f2e9e4;
-  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: 600;
   font-size: 0.9em;
 }
 
@@ -21,14 +26,10 @@ body {
   transition: background 500ms;
 }
 
-h1 {
+#profile h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #c9ada7;
-}
-
-#profile p {
-  color: #9a8c98;
 }
 
 #profile a {
@@ -100,13 +101,26 @@ section .card {
   background-color: #22223b;
 }
 
-#contact .form-label {
+#contact label {
   color: #9a8c98;
+}
+
+hr {
+  border-color: #9a8c98;
 }
 
 @media (max-width: 767px) {
   .navbar {
     background: #22223bea;
     transition: background 500ms;
+  }
+}
+
+@media (max-width: 575px) {
+  #profile h1 {
+    font-size: 2.5em;
+  }
+  #profile p {
+    font-size: 1em;
   }
 }
