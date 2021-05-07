@@ -31,6 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Nunito:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="app.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column vh-100">
@@ -60,16 +61,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#profile">Home</a>
+            <a class="nav-link" aria-current="page" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#tech-skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#trainings">Trainings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -80,13 +81,15 @@
 
     <main class="container">
       <section id="profile">
-        <div class="vh-100 d-flex flex-column justify-content-center">
+        <div
+          class="vh-100 d-flex flex-column justify-content-center"
+          data-aos="fade-up"
+        >
           <h1 class="display-3">Hello, I'm Mark Robert Bumatay.</h1>
           <p class="lead text-muted">
-            Graduate of Information System with experience working across the
-            full-stack of web development. I've built a few projects by myself
-            and I'm looking for an entry-level role where I can grow and learn
-            from other experienced team members while contributing to the
+            Graduate of Information System and have built a few sample projects
+            by myself. I'm looking for an entry-level role where I can grow and
+            learn from other experienced team members while contributing to the
             success of the company.
           </p>
           <div class="mb-3">
@@ -111,11 +114,109 @@
         </div>
       </section>
 
+      <section id="projects" class="mb-5">
+        <h3 class="mb-3">Sample Projects</h3>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card h-100" data-aos="fade-up">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620370005/Portfolio/great-quotes-app_icj8t4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Great Quotes</h6>
+                <p class="card-text text-description">
+                  An application built with ReactJS that allows users to view
+                  and add a inspirational quotes. They can also view and add a
+                  comment on each qoutes
+                </p>
+                <!-- <a href="#" class="btn btn-sm btn-secondary">Learn More</a> -->
+
+                <a
+                  href="https://quotes-react-app-779e7.web.app/quotes"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Crowdfunding</h6>
+                <p class="card-text text-description">
+                  A platform supporting local entreprenuer's self-reliance
+                  through donation for co-existence and inclusive growth (with
+                  admin dashboard: credentials will be provided upon request)
+                </p>
+                <!-- <a href="#" class="btn btn-sm btn-secondary">Learn More</a> -->
+
+                <a
+                  href="https://thawing-tor-92423.herokuapp.com/projects"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Shop Ignite</h6>
+                <p class="card-text text-description">
+                  An e-commerce platform made as a assessment project during my
+                  web development training on TESDA built with basic PHP, HTML,
+                  CSS, JavaScript, Bootstrap, CSS and MySQL
+                </p>
+                <!-- <a href="#" class="btn btn-sm btn-secondary">Learn More</a> -->
+                <a
+                  href="http://shop-ignite.000webhostapp.com/"
+                  class="btn btn-sm btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="600">
+              <img
+                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">Portfolio</h6>
+                <p class="card-text text-description">
+                  A static webpage that shows about my profile, technical
+                  skills, trainings & online courses, projects and a contact
+                  form
+                </p>
+                <!-- <a href="#" class="btn btn-sm btn-secondary">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="tech-skills" class="mb-5">
         <h3 class="mb-3">Technical Skills</h3>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up">
               <div class="card-body">
                 <h6 class="card-title">Front-End</h6>
                 <ul class="text-description">
@@ -123,12 +224,13 @@
                   <li><i class="fab fa-css3"></i> CSS</li>
                   <li><i class="fab fa-js"></i> JavaScript</li>
                   <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                  <li><i class="fab fa-react"></i> ReactJS</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
                 <h6 class="card-title">Back-End</h6>
                 <ul class="text-description">
@@ -147,7 +249,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-delay="400">
               <div class="card-body">
                 <h6 class="card-title">Others</h6>
                 <ul class="text-description">
@@ -212,7 +314,48 @@
             role="tabpanel"
             aria-labelledby="pills-completed-tab"
           >
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-up">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1619766954/Portfolio/react-course-max_sgpss1.jpg"
+                    alt="..."
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      React - The Complete Guide (incl Hooks, React Router,
+                      Redux) | Udemy
+                    </h6>
+                    <p class="card-text text-description">
+                      It was completely updated and re-recorded from the ground
+                      up in April 2021 - it teaches the very latest version of
+                      React with all the core, modern features you need to know!
+                    </p>
+                    <p class="card-text">
+                      <small class="text-dark">by Academind </small>
+                    </p>
+                    <a
+                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                      target="_blank"
+                      class="btn btn-sm btn-secondary"
+                    >
+                      Learn More
+                    </a>
+                    <a
+                      href="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368047/Portfolio/react-cert_xvzuag.jpg"
+                      target="_blank"
+                      class="btn btn-sm btn-secondary"
+                    >
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" data-aos="fade-up" data-aos-delay="200">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -252,7 +395,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-up" data-aos-delay="400">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -292,7 +435,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="fade-up" data-aos-delay="600">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
@@ -343,7 +486,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="https://img-a.udemycdn.com/course/240x135/2365628_0b60_8.jpg?0IYC4dGzfkhhjO8N3P2QFLebrpEKWq1E5HGK8MYpL64B1rDTVa22S4sWuqVu2rV-kVy9DYasskiQ3q3IsGPzILsvID_ezC7hqY61SHE7jA3vWFcA6wEuwiFmOkTJf9Ph"
+                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1620368296/Portfolio/mern_j5t7zn.jpg"
                     alt="..."
                     class="img-fluid"
                   />
@@ -351,77 +494,33 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h6 class="card-title">
-                      Complete React Developer in 2021 (w/ Redux, Hooks,
-                      GraphQL) | Udemy
+                      React, NodeJS, Express & MongoDB - The MERN Fullstack
+                      Guide
                     </h6>
                     <p class="card-text text-description">
-                      At nearly 40 hours, both instructors essentially dedicates
-                      the entire course to building one massive project. It’s an
-                      ecommerce site with all the bells and whistles, from Redux
-                      to Firebase to GraphQL and beyond.
+                      This course is taught by two instructors - Max (React.js,
+                      Node/ Express) and Manuel (MongoDB) who have years of
+                      experience of working with these technologies and teaching
+                      them to other people. They took and combined their
+                      experiences to deliver the best possible MERN stack course
+                      you can find out there.
                     </p>
                     <div class="progress mb-3">
                       <div
                         class="progress-bar"
                         role="progressbar"
-                        style="width: 15%"
-                        aria-valuenow="15"
+                        style="width: 60%"
+                        aria-valuenow="60"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
                     </div>
                     <p class="d-flex justify-content-between card-text">
-                      <span>by Andrei Neagoie & Yihua Zhang </span>
-                      <span>15% Complete</span>
+                      <span>by Academind</span>
+                      <span>60% Complete</span>
                     </p>
                     <a
-                      href="https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"
-                      target="_blank"
-                      class="btn btn-sm btn-secondary"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1616412711/Portfolio/mjb-removebg-preview_fdgldu.png"
-                    alt="..."
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title">
-                      The Modern Javascript Bootcamp Course (2021) | Udemy
-                    </h6>
-                    <p class="card-text text-description">
-                      This is the ultimate Javascript course. There are many
-                      resources online for learning Javascript, but this is the
-                      only one that covers everything you need to know, from 'A'
-                      to 'Z', and a couple letters after that. Master the basics
-                      with Colt, then build awesome projects with Stephen.
-                    </p>
-                    <div class="progress mb-3">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 40%"
-                        aria-valuenow="40"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <p class="d-flex justify-content-between card-text">
-                      <span>by Colt Steele & Stephen Grider </span>
-                      <span>40% Complete</span>
-                    </p>
-                    <a
-                      href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/"
+                      href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/"
                       target="_blank"
                       class="btn btn-sm btn-secondary"
                     >
@@ -435,221 +534,7 @@
         </div>
       </section>
 
-      <section id="projects" class="mb-5">
-        <h3 class="mb-3">Projects</h3>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1612937161/Portfolio/crowdfunding_edcohw.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">Crowdfunding</h6>
-                <p class="card-text text-description text-trim">
-                  A platform supporting local entreprenuer's self-reliance
-                  through donation for co-existence and inclusive growth (with
-                  admin dashboard: credentials will be provided upon request)
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  Launch demo modal
-                </button>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div
-                          id="carouselExampleIndicators"
-                          class="carousel slide"
-                          data-ride="carousel"
-                        >
-                          <ol class="carousel-indicators">
-                            <li
-                              data-target="#carouselExampleIndicators"
-                              data-slide-to="0"
-                              class="active"
-                            ></li>
-                            <li
-                              data-target="#carouselExampleIndicators"
-                              data-slide-to="1"
-                            ></li>
-                            <li
-                              data-target="#carouselExampleIndicators"
-                              data-slide-to="2"
-                            ></li>
-                          </ol>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img
-                                src="https://images.unsplash.com/photo-1569389397653-c04fe624e663?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                                class="d-block w-100"
-                                alt="..."
-                              />
-                            </div>
-                            <div class="carousel-item">
-                              <img
-                                src="https://images.unsplash.com/photo-1569389397653-c04fe624e663?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                                class="d-block w-100"
-                                alt="..."
-                              />
-                            </div>
-                            <div class="carousel-item">
-                              <img
-                                src="https://images.unsplash.com/photo-1569389397653-c04fe624e663?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-                                class="d-block w-100"
-                                alt="..."
-                              />
-                            </div>
-                          </div>
-                          <a
-                            class="carousel-control-prev"
-                            href="#carouselExampleIndicators"
-                            role="button"
-                            data-slide="prev"
-                          >
-                            <span
-                              class="carousel-control-prev-icon"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a
-                            class="carousel-control-next"
-                            href="#carouselExampleIndicators"
-                            role="button"
-                            data-slide="next"
-                          >
-                            <span
-                              class="carousel-control-next-icon"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Save changes
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a
-                  href="https://thawing-tor-92423.herokuapp.com/projects"
-                  class="btn btn-sm btn-secondary"
-                  target="_blank"
-                  >Live Preview</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613485733/Portfolio/shop-ignite_texou7.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">Shop Ignite</h6>
-                <p class="card-text text-description text-trim">
-                  An e-commerce platform made as a assessment project during my
-                  web development training on TESDA built with basic PHP, HTML,
-                  CSS, JavaScript, Bootstrap, CSS and MySQL
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                <a
-                  href="http://shop-ignite.000webhostapp.com/"
-                  class="btn btn-sm btn-secondary"
-                  target="_blank"
-                  >Live Preview</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613020764/Portfolio/portfolio_zuuow8.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">Portfolio</h6>
-                <p class="card-text text-description text-trim">
-                  A static webpage that shows about my profile, technical
-                  skills, trainings & online courses, projects and a contact
-                  form
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <img
-                src="https://res.cloudinary.com/dzfkuznwb/image/upload/v1613011497/Portfolio/ssucoed_krzhtv.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">College of Education | SSU</h6>
-                <p class="card-text text-description text-trim">
-                  A group project that was made during my college days and the
-                  one responsible for designing the website powered by
-                  WordPress.
-                </p>
-                <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
-                <a
-                  href="https://ssucoedsite.wordpress.com/"
-                  class="btn btn-sm btn-secondary"
-                  target="_blank"
-                  >Live Preview</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="mb-5">
+      <section id="contact" class="mb-5" data-aos="fade-up">
         <h3 class="mb-3">Get In Touch</h3>
         <form action="https://formspree.io/f/myybagad" method="POST">
           <div class="row">
@@ -716,6 +601,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
